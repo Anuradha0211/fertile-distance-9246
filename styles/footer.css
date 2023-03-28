@@ -1,0 +1,39 @@
+footer{
+    background-color: #17263e;
+    color: white;
+}
+#toppart{
+    display: flex;
+}
+#leftpart{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    line-height: 160%;
+}
+.vertical {
+    border-left: 1px solid grey;
+    height: 150px;
+    position: sticky;
+    left: 50%;
+    margin-top: 25px;
+}
+#rightpart{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+hr{
+    margin-top: 20px;
+}
+#basesection{
+    display: flex;
+    justify-content: space-around;
+}
+#toppart h5{
+    color: grey;
+}
+#toppart a{
+    color: white;
+    text-decoration: none;
+}
