@@ -27,10 +27,13 @@ body{
 .left{
     background-color: #2874f0;
     padding:3rem 2rem;
+    background-image: url(image/Steinfield3.png);
+    background-repeat: no-repeat;
+    background-position: center 90%;
 }
 
 .right{
-    padding:3rem 2rem;
+    padding:3rem 2rem 1.8rem;
 }
 
 .heading{
@@ -39,7 +42,7 @@ body{
     margin-bottom: 1rem;
 }
 .head1{
-    color:#fff;
+    color:#dbdbdb;
     font-size: 1.2rem;
 }
 
@@ -87,4 +90,63 @@ body{
 .input:focus ~ .line,
 .input:not(:placeholder-shown)~line{
     transform: scaleX(1);
+}
+
+a{
+    text-decoration: none;
+    color: #2874f0;
+}
+
+/*  */
+.input-group .link{
+    position: absolute;
+    right: 0;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.input-group .link:hover{
+    text-decoration: underline;
+}
+
+.para{
+    font-size: 0.75rem;
+    margin-top: 2rem;
+    color: #878787;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    background-color: #fb641b;
+    padding: 1rem;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.4);
+    color: #fff;
+    font-size: 1.025rem;
+}
+
+
+
+/*  */
+.para--or{
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.8rem 0;
+}
+
+.btn2{
+    color: #2874f0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    margin-top: 0;
+}
+
+.bottom{
+    text-align: center;
+}
+.link--bottom{
+    display: inline-block;
+    margin-top: 5rem;
 }
