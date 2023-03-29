@@ -1,6 +1,6 @@
-#navbar{
+/* #navbar{
     border: 2px solid red;
-}
+} */
 #topnav{
     /* border: 2px solid green; */
     position: fixed;
@@ -10,25 +10,68 @@
     width: 100%;
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 #topnav>img{
-    height: 115px;
+    height: 55px;
     margin-left: 200px;
+
 }
 #navelem{      
-    border: 2px solid rebeccapurple;
-    width: 70%;                 
+    /* border: 2px solid rebeccapurple; */
+    width: 74%;          
 }
 #navelem>input{
-    width: 40%;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding: 10px 0px 10px 15px;
+    width:50%;
+    margin-left: 10px;
+    /* margin-right: 30px; */
+    padding: 8px 0px 8px 15px;
 }
-#bottomnav{
-    /* border: 2px solid blue; */
-    margin-top: 115px;
+#navelem>a{
+    margin-left: 43px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold; 
 }
-#navproduct{
-    display: flex;
+#navelem>.alogin{
+    background-color: white;
+    color: #0E74EC;
+    font-weight: bold;
+    padding: 5px 40px 5px 40px;
 }
+.morebtn {
+    background-color:  #0E74EC;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-left: 40px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .more {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .more-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .more-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .more-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.more:hover .more-content {display: block;}
