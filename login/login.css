@@ -22,11 +22,13 @@ body{
     width: 100%;
     display:grid;
     grid-template-columns: 1fr 1.3fr;
+    margin: auto;
 }
 
 .left{
     background-color: #2874f0;
     padding:3rem 2rem;
+    /* margin-right: 30px; */
     background-image: url(image/Steinfield3.png);
     background-repeat: no-repeat;
     background-position: center 90%;
@@ -125,6 +127,7 @@ a{
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.4);
     color: #fff;
     font-size: 1.025rem;
+    cursor: pointer;
 }
 
 
@@ -149,4 +152,27 @@ a{
 .link--bottom{
     display: inline-block;
     margin-top: 5rem;
+}
+
+
+.cross{
+    /* position: absolute; */
+    position: relative;
+    width: 62%;
+    transform: translateX(0);
+}
+.cros{
+    position: absolute;
+    right: 100px;
+    color:#fff;
+    top:10px;
+}
+
+.fa-xmark{
+    /* top: 20px;
+    left: 400px;
+    position: absolute; */
+    font-size: 30px;
+    display: none;
+    z-index: 101;
 }
