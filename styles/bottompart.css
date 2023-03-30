@@ -1,0 +1,21 @@
+#top-stories{
+    margin-bottom: 60px;
+    background-color: rgb(251, 251, 251);
+    padding: 40px 30px 30px 20px;
+}
+#top-stories>div{
+    margin-bottom: 15px;
+}
+#top-stories>div>h4{
+    display: inline;
+}
+#top-stories>div>a{
+    text-decoration: none;
+    color: grey;
+}
+#flipkartdetails{
+    /* margin-bottom: 60px; */
+    background-color: rgb(251, 251, 251);
+    padding: 40px 30px 30px 20px;
+    color: grey;
+}

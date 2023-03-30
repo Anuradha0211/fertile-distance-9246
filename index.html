@@ -6,26 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freecraft</title>
     <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/banner.css">
+    <link rel="stylesheet" href="./styles/bottomnav.css">
+    <link rel="stylesheet" href="./styles/productbody.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <style>   
-        #Category{
-            display: flex;
-        }
-        #productsection{
-            display: flex;
-            gap: 50px;
-        }
-        #top-stories{
-            margin-bottom: 60px;
-        }
-        #top-stories>div{
-            margin-bottom: 15px;
-        }
-        #top-stories>div>h4{
-            display: inline;
-        }   
-    </style>
+    <link rel="stylesheet" href="./styles/bottompart.css">
 </head>
 <body>
     <div id="navbar">
@@ -33,7 +17,18 @@
             <img src="./Images/Freecraft Logo.jpeg" alt="Logo Error">
             <div id="navelem">
                 <input type="text" placeholder="Search for products, brands, and more">
-                <a href="" class="alogin">Login</a>
+                <div class="more">
+                    <button class="morebtn" id="alogin">Login</button>
+                    <div class="more-content">
+                      <a href="#">New Customer? <span>Sign Up</span></a>
+                      <a href="#">My Profile</a>
+                      <a href="#">Flipkart Plus Zone</a>
+                      <a href="#">Orders</a>
+                      <a href="#">Wishlist</a>
+                      <a href="#">Rewards</a>
+                      <a href="#">Gift Cards</a>
+                    </div>
+                </div>
                 <a href="">Become a Seller</a>
                 <div class="more">
                     <button class="morebtn">More</button>
@@ -43,7 +38,7 @@
                       <a href="#">Advertise</a>
                       <a href="#">Download App</a>
                     </div>
-                  </div>
+                </div>
                 <a href="">Cart</a>
             </div>
             
@@ -84,17 +79,20 @@
                         <h5>Electronics</h5>
                     </a>
                     <div class="productdd-content">
-                      <a href="#">Men's Top Wear</a>
-                      <a href="#">Men's Bottom Wear</a>
-                      <a href="#">Women Ethnic</a>
-                      <a href="#">Women Western</a>
-                      <a href="#">Men Footwear</a>
-                      <a href="#">Women Footwear</a>
-                      <a href="#">Watches & accessories</a>
-                      <a href="#">Bags, Suitcases & Luggage</a>
-                      <a href="#">Kids</a>
-                      <a href="#">Essentials</a>
-                      <a href="#">Winter</a>
+                      <a href="#">Audio</a>
+                      <a href="#">Electronics GST Store</a>
+                      <a href="#">Cameras & Accessories</a>
+                      <a href="#">Computer Peripherals</a>
+                      <a href="#">Gaming</a>
+                      <a href="#">Health & Personal Care</a>
+                      <a href="#">Laptop Accessories</a>
+                      <a href="#">Laptop & Desktop</a>
+                      <a href="#">Mobile Accessories</a>
+                      <a href="#">PowerBank</a>
+                      <a href="#">Smart Home Automation</a>
+                      <a href="#">Smart Wearables</a>
+                      <a href="#">Storage</a>
+                      <a href="#">Tablets</a>
                     </div>
                   </div>
                 
@@ -104,17 +102,19 @@
                         <h5>Home</h5>
                     </a>
                     <div class="productdd-content">
-                      <a href="#">Men's Top Wear</a>
-                      <a href="#">Men's Bottom Wear</a>
-                      <a href="#">Women Ethnic</a>
-                      <a href="#">Women Western</a>
-                      <a href="#">Men Footwear</a>
-                      <a href="#">Women Footwear</a>
-                      <a href="#">Watches & accessories</a>
-                      <a href="#">Bags, Suitcases & Luggage</a>
-                      <a href="#">Kids</a>
-                      <a href="#">Essentials</a>
-                      <a href="#">Winter</a>
+                      <a href="#">Home Furnishings</a>
+                      <a href="#">Furniture Studio</a>
+                      <a href="#">Living Room Furniture</a>
+                      <a href="#">Kitchen & Dining</a>
+                      <a href="#">Bedroom Furniture</a>
+                      <a href="#">Home Decor</a>
+                      <a href="#">Tools & Utility</a>
+                      <a href="#">Work Space Furniture</a>
+                      <a href="#">Lightnings & Electricals</a>
+                      <a href="#">Space Saving Furniture</a>
+                      <a href="#">Cleaning & Bath</a>
+                      <a href="#">Kids Furniture</a>
+                      <a href="#">Pet & Gardening</a>
                     </div>
                   </div>
                 <a href=""><div>
@@ -171,9 +171,9 @@
 
     <div id="productbody">
         <div id="Category">
-            <div id="catsection">
-                <h2>Best of Electronics</h2>
-                <a href="">VIEW ALL</a>
+            <div id="catsection" class="electronics">
+                <h2>Best of <br> Electronics</h2>
+                <a href="" class="viewall">VIEW ALL</a>
             </div>
             <div id="productsection">
                 <a href=""><div id="proddetails">
@@ -210,9 +210,9 @@
         </div>
     
         <div id="Category">
-            <div id="catsection">
-                <h2>Beauty, Food, Toys & More</h2>
-                <a href="">VIEW ALL</a>
+            <div id="catsection" class="beauty">
+                <h2>Beauty, Food,<br> Toys & More</h2>
+                <a href="" class="viewall">VIEW ALL</a>
             </div>
             <div id="productsection">
                 <a href=""><div id="proddetails">
@@ -249,9 +249,9 @@
         </div>
     
         <div id="Category">
-            <div id="catsection">
-                <h2>Shop for a Cool Summer</h2>
-                <a href="">VIEW ALL</a>
+            <div id="catsection" class="summer">
+                <h2>Shop for a<br> Cool Summer</h2>
+                <a href="" class="viewall">VIEW ALL</a>
             </div>
             <div id="productsection">
                 <a href=""><div id="proddetails">
@@ -283,9 +283,9 @@
         </div>
     
         <div id="Category">
-            <div id="catsection">
-                <h2>Fashion Top Deals</h2>
-                <a href="">VIEW ALL</a>
+            <div id="catsection" class="fashion">
+                <h2>Fashion Top<br> Deals</h2>
+                <a href="" class="viewall">VIEW ALL</a>
             </div>
             <div id="productsection">
                 <a href=""><div id="proddetails">
@@ -321,10 +321,10 @@
             </div>
         </div>
     
-        <div id="Category">
-            <div id="catsection">
-                <h2>Pick Your Style</h2>
-                <a href="">VIEW ALL</a>
+        <div id="Category" >
+            <div id="catsection" class="yourstyle">
+                <h2>Pick Your<br> Style</h2>
+                <a href="" class="viewall">VIEW ALL</a>
             </div>
             <div id="productsection">
                 <a href=""><div id="proddetails">
