@@ -14,10 +14,10 @@ function check(LS){
    let stated=document.getElementById("state");
    let landmarkd=document.getElementById("landmark");
    let altnumd=document.getElementById("sec-no");
-   let addressd=document.getElementById("address1");
-   //let addressdd=document.getElementById("address2");
    let btn=document.getElementById("addr-button");
    let btn2=document.getElementById("login-button");
+   let div=document.getElementById("random");
+
 
    btn2.addEventListener("click",function(){
     if(emaild.value==""){
@@ -44,9 +44,7 @@ function check(LS){
         state:stated.value,
         landmark:landmarkd.value,
         alternateno:altnumd.value,
-        address:addressd.value
        }
-//console.log(stated.innerText)
        if(emaild.value==="" || named.value==="" || numberd.value==="" || pincoded.value==="" || locationd.value==="" || cityd.value===""){
         alert("Enter Your Details")
         }
@@ -56,7 +54,7 @@ function check(LS){
         else if(numberd.value.length==10){
           let t=duplicate(numberd.value);
           if(t){
-            alert("User is already exist you can directly go on login page")
+            alert("Number is already registered")
           }
           else{
         alert("Signup Successful")
@@ -80,6 +78,9 @@ function check(LS){
   }
    
 }
+ var x = Math.floor((Math.random()* 100) + 1);
+ div.append(x);
+
 function openform(){
     document.querySelector(".login").style.display="block";
     document.querySelector("#login-button").style.display="inline";
