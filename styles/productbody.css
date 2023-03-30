@@ -1,0 +1,42 @@
+#Category{
+    display: flex;
+    background-color: white;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    height: 345px;
+}
+#catsection{
+    border: 2px solid red;
+    width: 230px;
+    text-align: center;
+    padding-top: 60px;
+    background-position: 0px bottom;
+    background-repeat: no-repeat;   
+}
+.viewall{
+    text-decoration: none;
+    color: white;
+    background-color: #0E74EC;
+    padding: 10px 18px;
+    
+}
+.electronics{
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90);   
+}
+.beauty{
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/b84f1c22cce1a6a3.jpg?q=90);
+}
+.summer{
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/898b527fdf29b17a.jpg?q=90);
+}
+.fashion{
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/31d46a8fd93eeedd.jpg?q=90);
+}
+.yourstyle{
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/31d46a8fd93eeedd.jpg?q=90);
+}
+#productsection{
+    display: flex;
+    gap: 50px;
+}
+
