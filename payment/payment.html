@@ -96,44 +96,60 @@
                              <span>ORDER SUMMERY</span>
                         </div>
                     </div> <br><br>
-                    <div>
+                    <div id="product">
                        <div id="display-item"></div>
 
 
 
-                       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button>CONTINUE</button>
+                       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button id="product-button">CONTINUE</button>
                     </div> <br><br>
-                    <div class="blue" onclick="openform3()"> 
+                    <div class="blue" onclick="openform4()"> 
                         <div>
                             &nbsp&nbsp&nbsp&nbsp<span>4</span> &nbsp;
                             <span>PAYMENT OPTIONS</span>
                         </div>
                     </div> <br><br>
                     <div id="payment">
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="paytm" >&nbsp&nbsp
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="paytm" id="upi">&nbsp&nbsp
                           <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/batman-returns/logos/UPI.gif" alt="err" class="im">&nbsp&nbsp
                           <span>UPI</span> <br> <br>
-                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                          <div id="hide" style="display:none;">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span><b>Choose an option</b></span> <br><br>
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="radio" name="paytm2"> PhonePe <br><br>
+                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="radio" name="paytm2" id="paytm2"> PhonePe <br><br>
+                          <div id="hide2" style="display:none;">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button >CONTINUE</button> <br><br>
+                          </div>
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="green">₹15 instant saving applicable.</span> <br><br>
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="radio" name="paytm2"> Your UPI ID
-                          <br> <br>
+                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="radio" name="paytm2" id="paytm3"> Your UPI ID <br> <br>
+                          <div id="align2" style="display:none;">
+                            <div><input type="text" placeholder="Enter your UPI ID"></div>
+                            <div><button>CONTINUE</button></div>
+                          </div>
+                          </div>
+                          
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="paytm">&nbsp&nbsp
                           <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/batman-returns/logos/Wallets.gif" alt="err" class="im">&nbsp&nbsp
                           <span>Wallets</span> <br> <br>
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="paytm">&nbsp&nbsp <span>Credit / Debit / ATM Card</span><br> <br>
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="paytm">&nbsp&nbsp <span>Net Banking</span><br> <br>
-                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="paytm">&nbsp&nbsp <span>Cash on Delivery</span>
-                           <div id="random"></div>      
+                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="paytm" id="cash">&nbsp&nbsp <span>Cash on Delivery</span> <br><br>
+                          <div id="align" style="display:none;">
+                             <div id="random"><h1 id="no"></h1></div> <br>
+                             <div><input type="number" id="randomcheck" placeholder="Enter OTP"></div> <br>
+                             <div><button id="confirm">CONFIRM ORDER</button></div> <br>
+                          </div>     
                           <br> <br>
                     </div>
                 </div>
