@@ -1,17 +1,16 @@
 body{
     padding: 0px;
-    margin: 0px
+    margin: 0px;
+    background-color: #f1f3f6;
 }
 #nv{
     width: 1489px;
     height: 57px;
-    border-radius: 2px solid black;
     background-color: #2874F0;
 }
 #one{
     width: 850px;
     height: 800px;
-    border: 2px solid black;
     margin-left: 150px;
     margin-top: 20px;
 }
@@ -29,7 +28,6 @@ body{
     background-color: #2874F0;
     width: 850px;
     height: 50px;
-    border: 2px solid black;
     display: flex;
     
 }
@@ -63,4 +61,23 @@ select{
 }
 .green{
     color: green;
+}
+#random{
+    margin-left: 80px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+    width: 60px;
+    padding: 0.5px 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+#align{
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+}
+#align2{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin-left: 30px;
 }
