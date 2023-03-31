@@ -1,3 +1,15 @@
+// const signUpButton = document.getElementById("signUp");
+// const signInButton = document.getElementById("signIn");
+// const container = document.getElementById("container");
+
+// signUpButton.addEventListener("click", () => {
+//   container.classList.add("right-panel-active");
+// });
+
+// signInButton.addEventListener("click", () => {
+//   container.classList.remove("right-panel-active");
+// });
+
 // fetch("https://fakestoreapi.com/products")
 // fetch("https://10cnehewsg.api.quickmocker.com/items")
 // fetch("https://62ffb7f29350a1e548e514fe.mockapi.io/items")
@@ -27,3 +39,8 @@
 // .catch((err) => {
 //   console.log(err);
 // });
+
+$(".signup").hide();
+$("#signin, #signup").on("click", function () {
+  $(".signin signup").toggle();
+});
