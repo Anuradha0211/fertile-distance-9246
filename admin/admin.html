@@ -10,100 +10,107 @@
     <title>Admin</title>
   </head>
   <body>
+    <div class="controls">
+      <label for="search">Search by Name:</label>
+      <input type="text" id="search" />
+    </div>
     <div class="container">
       <div class="row">
         <div class="columns four sidebar-one" id="sidebar-one">
-          <h4>Add Employee</h4>
+          <h4>Add Product</h4>
           <input
             type="text"
-            id="employee-name"
+            id="product-name"
             class="u-full-width"
-            placeholder="Name"
+            placeholder="Product Name"
+            required
           />
           <input
             type="text"
-            id="employee-image"
+            id="product-image"
             class="u-full-width"
             placeholder="Image Url"
           />
           <input
-            type="number"
-            id="employee-dept"
+            type="text"
+            id="product-desc"
             class="u-full-width"
-            placeholder="Department"
+            placeholder="Description"
           />
-          <input
-            type="number"
-            id="employee-salary"
-            class="u-full-width"
-            placeholder="Salary"
-          />
-          <button id="add-employee" class="u-full-width button button-primary">
-            Add Employee
-          </button>
-          <hr />
-
-          <h4>update all fields of Employee</h4>
           <input
             type="text"
-            id="update-employee-id"
+            id="product-brand"
+            class="u-full-width"
+            placeholder="BrandName"
+          />
+          <input
+            type="number"
+            id="product-price"
+            class="u-full-width"
+            placeholder="Product Price"
+          />
+          <input
+            type="text"
+            id="product-category"
+            class="u-full-width"
+            placeholder="Product Category"
+          />
+          <button id="add-product" class="u-full-width button button-primary">
+            Add Product
+          </button>
+
+          <hr />
+          <h4>update all fields of Product</h4>
+          <input
+            type="text"
+            id="update-product-id"
             class="u-full-width"
             placeholder="ID"
           />
           <input
             type="text"
-            id="update-employee-name"
+            id="update-product-name"
             class="u-full-width"
-            placeholder="Name"
+            placeholder="ProductName"
           />
           <input
             type="text"
-            id="update-employee-image"
+            id="update-product-image"
             class="u-full-width"
             placeholder="Image Url"
           />
           <input
             type="number"
-            id="update-employee-dept"
+            id="update-product-desc"
             class="u-full-width"
-            placeholder="Department"
+            placeholder="Description"
+          />
+          <input
+            type="text"
+            id="update-product-brand"
+            class="u-full-width"
+            placeholder="BrandName"
           />
           <input
             type="number"
-            id="update-employee-salary"
+            id="upadte-product-price"
             class="u-full-width"
-            placeholder="Salary"
+            placeholder="Product Price"
+          />
+          <input
+            type="text"
+            id="update-product-category"
+            class="u-full-width"
+            placeholder="Product Category"
           />
           <button
-            id="update-employee"
+            id="update-product"
             class="u-full-width button button-primary"
           >
             Update all fields
           </button>
           <hr />
-
-          <h4>update only Salary</h4>
-          <input
-            type="text"
-            id="update-score-employee-id"
-            class="u-full-width"
-            placeholder="ID"
-          />
-          <input
-            type="number"
-            id="update-score-employee-salary"
-            class="u-full-width"
-            placeholder="Salary"
-          />
-          <button
-            id="update-score-employee"
-            class="u-full-width button button-primary"
-          >
-            Update Employee Salary
-          </button>
-          <hr />
-
-          <h4>Sort Based On Salary</h4>
+          <h4>Sort Based On Price</h4>
           <button
             id="sort-low-to-high"
             class="u-full-width button button-primary"
@@ -117,21 +124,6 @@
             Sort High To Low
           </button>
           <hr />
-
-          <h4>Filter Based On Salary</h4>
-          <button
-            id="filter-less-than-1L"
-            class="u-full-width button button-primary"
-          >
-            less than 1L
-          </button>
-          <button
-            id="filter-more-than-equal-1L"
-            class="u-full-width button button-primary"
-          >
-            more than or equal 1L
-          </button>
-          <hr />
         </div>
 
         <div class="columns eight main">
@@ -139,6 +131,7 @@
         </div>
       </div>
     </div>
+
     <script src="./admin.js"></script>
   </body>
 </html>
