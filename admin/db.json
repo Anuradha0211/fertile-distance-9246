@@ -1,7 +1,28 @@
-{
-    "front": [
+{    
+  
+
+"admin" :[
+  {
+    "id": 102030,
+    "name": "admin",
+    "passward":"admin"
+
+  }
+ ],  
+
+   "users" :[
+    {
+      "id": 171999,
+      "name":"Vijay Dodiya",
+      "email": "vijaydodiya0107@gmail.com",
+      "passward": "Vijay@0107"
+
+    }
+   ],
+  
+  "mixProducts": [
             {
-              "id": 1,
+              "id": 199901,
               "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
               "price": 109.95,
               "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
@@ -13,7 +34,7 @@
               }
             },
             {
-              "id": 2,
+              "id": 199902,
               "title": "Mens Casual Premium Slim Fit T-Shirts ",
               "price": 22.3,
               "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
@@ -25,7 +46,7 @@
               }
             },
             {
-              "id": 3,
+              "id": 199903,
               "title": "Mens Cotton Jacket",
               "price": 55.99,
               "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
@@ -37,7 +58,7 @@
               }
             },
             {
-              "id": 4,
+              "id": 199904,
               "title": "Mens Casual Slim Fit",
               "price": 15.99,
               "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
@@ -49,7 +70,7 @@
               }
             },
             {
-              "id": 5,
+              "id": 199905,
               "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
               "price": 695,
               "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
@@ -61,7 +82,7 @@
               }
             },
             {
-              "id": 6,
+              "id": 199906,
               "title": "Solid Gold Petite Micropave ",
               "price": 168,
               "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
@@ -73,7 +94,7 @@
               }
             },
             {
-              "id": 7,
+              "id": 199907,
               "title": "White Gold Plated Princess",
               "price": 9.99,
               "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
@@ -85,7 +106,7 @@
               }
             },
             {
-              "id": 8,
+              "id": 199908,
               "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
               "price": 10.99,
               "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
@@ -97,7 +118,7 @@
               }
             },
             {
-              "id": 9,
+              "id": 199909,
               "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
               "price": 64,
               "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
@@ -109,7 +130,7 @@
               }
             },
             {
-              "id": 10,
+              "id": 199910,
               "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
               "price": 109,
               "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
@@ -121,7 +142,7 @@
               }
             },
             {
-              "id": 11,
+              "id": 199911,
               "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
               "price": 109,
               "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
@@ -133,7 +154,7 @@
               }
             },
             {
-              "id": 12,
+              "id": 199912,
               "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
               "price": 114,
               "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
@@ -145,7 +166,7 @@
               }
             },
             {
-              "id": 13,
+              "id": 199913,
               "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
               "price": 599,
               "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
@@ -157,7 +178,7 @@
               }
             },
             {
-              "id": 14,
+              "id": 199914,
               "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
               "price": 999.99,
               "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
@@ -169,7 +190,7 @@
               }
             },
             {
-              "id": 15,
+              "id": 199915,
               "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
               "price": 56.99,
               "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
@@ -181,7 +202,7 @@
               }
             },
             {
-              "id": 16,
+              "id": 199916,
               "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
               "price": 29.95,
               "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
@@ -193,7 +214,7 @@
               }
             },
             {
-              "id": 17,
+              "id": 199917,
               "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
               "price": 39.99,
               "description": "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
@@ -205,7 +226,7 @@
               }
             },
             {
-              "id": 18,
+              "id": 199918,
               "title": "MBJ Women's Solid Short Sleeve Boat Neck V ",
               "price": 9.85,
               "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
@@ -217,7 +238,7 @@
               }
             },
             {
-              "id": 19,
+              "id": 199919,
               "title": "Opna Women's Short Sleeve Moisture",
               "price": 7.95,
               "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
@@ -229,7 +250,7 @@
               }
             },
             {
-              "id": 20,
+              "id": 199920,
               "title": "DANVOUY Womens T Shirt Casual Cotton Short",
               "price": 12.99,
               "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
@@ -241,20 +262,15 @@
               }
             }
           ],
-
-          "landingPage":[ 
-            {
-                "id":"1"
-            }
-          ],
-
-          "menWomensWear": [
+          
+    "products": [
             {
                 "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/k/3/x/xl-printed-shirt-for-men-foxter-original-imagktzmkg4wqwrv.jpeg?q=70",
                 "name": "Foxter",
                 "brandName": "Adidas",
                 "desc": "Men Regular Fit Printed Casual Shirt",
                 "price": 329,
+                "category":"fashion",
                 "id": "1"
             },
             {
@@ -263,6 +279,7 @@
                 "brandName": "Adidas",
                 "desc": "Men Striped Round Neck Blue T-Shirt",
                 "price": 299,
+                "category":"fashion",
                 "id": "2"
             },
             {
@@ -271,6 +288,7 @@
                 "brandName": "Adidas",
                 "desc": "Men Printed Round Neck Green, Black T-Shirt",
                 "price": 294,
+                "category":"fashion",
                 "id": "3"
             },
             {
@@ -279,6 +297,7 @@
                 "brandName": "Adidas",
                 "desc": "Men Color Block Hooded Neck Multicolor T-Shirt",
                 "price": 259,
+                "category":"fashion",
                 "id": "4"
             },
             {
@@ -287,6 +306,7 @@
                 "brandName": "Adidas",
                 "desc": "Men Solid Hooded Neck Black T-Shirt",
                 "price": 329,
+                "category":"fashion",
                 "id": "5"
             },
             {
@@ -295,6 +315,7 @@
                 "brandName": "Adidas",
                 "desc": "Men Solid Mandarin Collar Black, Grey T-Shirt",
                 "price": 299,
+                "category":"fashion",
                 "id": "6"
             },
             {
@@ -303,6 +324,7 @@
                 "brandName": "Adidas",
                 "desc": "Men Striped Polo Neck Blue T-Shirt",
                 "price": 299,
+                "category":"fashion",
                 "id": "7"
             },
             {
@@ -311,6 +333,7 @@
                 "brandName": "Adidas",
                 "desc": "Men Slim Fit Striped Spread Collar Casual Shirt",
                 "price": 329,
+                "category":"fashion",
                 "id": "8"
             },
             {
@@ -319,6 +342,7 @@
                 "brandName": "Adidas",
                 "desc": "Men Regular Fit Solid Cut Away Collar Casual Shirt",
                 "price": 329,
+                "category":"fashion",
                 "id": "9"
             },
             {
@@ -327,6 +351,7 @@
                 "brandName": "Adidas",
                 "desc": "Men Regular Fit Solid Button Down Collar Formal Shirt",
                 "price": 359,
+                "category":"fashion",
                 "id": "10"
             },
             {
@@ -335,6 +360,7 @@
                 "brandName": "Raymond",
                 "desc": "Men Color Block Hooded Neck Red, Black T-Shirt",
                 "price": 199,
+                "category":"fashion",
                 "id": "11"
             },
             {
@@ -343,6 +369,7 @@
                 "brandName": "Raymond",
                 "desc": "Men Solid Henley Neck Maroon T-Shirt",
                 "price": 269,
+                "category":"fashion",
                 "id": "12"
             },
             {
@@ -351,6 +378,7 @@
                 "brandName": "Raymond",
                 "desc": "Men Regular Fit Solid Spread Collar Casual Shirt",
                 "price": 299,
+                "category":"fashion",
                 "id": "13"
             },
             {
@@ -359,6 +387,7 @@
                 "brandName": "Raymond",
                 "desc": "Men Slim Fit Solid Mandarin Collar Casual Shirt",
                 "price": 399,
+                "category":"fashion",
                 "id": "14"
             },
             {
@@ -367,6 +396,7 @@
                 "brandName": "Raymond",
                 "desc": "Nikky Men Printed Round Neck Black T-Shirt",
                 "price": 269,
+                "category":"fashion",
                 "id": "15"
             },
             {
@@ -375,6 +405,7 @@
                 "brandName": "Raymond",
                 "desc": "Men Regular Fit Solid Spread Collar Casual Shirt",
                 "price": 299,
+                "category":"fashion",
                 "id": "16"
             },
             {
@@ -383,6 +414,7 @@
                 "brandName": "Raymond",
                 "desc": "Men Solid Round Neck",
                 "price": 459,
+                "category":"fashion",
                 "id": "17"
             },
             {
@@ -391,6 +423,7 @@
                 "brandName": "Raymond",
                 "desc": "Men Slim Fit Printed Spread Collar Casual Shirt",
                 "price": 379,
+                "category":"fashion",
                 "id": "18"
             },
             {
@@ -399,6 +432,7 @@
                 "brandName": "Raymond",
                 "desc": "Men Solid Polo Neck Green T-Shirt",
                 "price": 299,
+                "category":"fashion",
                 "id": "19"
             },
             {
@@ -407,6 +441,7 @@
                 "brandName": "Raymond",
                 "desc": "Men Slim Fit Printed Spread Collar Casual Shirt",
                 "price": 379,
+                "category":"fashion",
                 "id": "20"
             },
             {
@@ -415,6 +450,7 @@
                 "brandName": "Turtle",
                 "desc": "Men Printed Round Neck White T-Shirt",
                 "price": 289,
+                "category":"fashion",
                 "id": "21"
             },
             {
@@ -423,6 +459,7 @@
                 "brandName": "Turtle",
                 "desc": "Men Printed Round Neck Dark Blue T-Shirt",
                 "price": 279,
+                "category":"fashion",
                 "id": "22"
             },
             {
@@ -431,6 +468,7 @@
                 "brandName": "Turtle",
                 "desc": "Men Striped Round Neck Blue T-Shirt",
                 "price": 307,
+                "category":"fashion",
                 "id": "23"
             },
             {
@@ -439,6 +477,7 @@
                 "brandName": "Turtle",
                 "desc": "Men Color Block Round Neck Black T-Shirt",
                 "price": 289,
+                "category":"fashion",
                 "id": "24"
             },
             {
@@ -447,6 +486,7 @@
                 "brandName": "Turtle",
                 "desc": "Men Slim Fit Printed Spread Collar Casual Shirt",
                 "price": 959,
+                "category":"fashion",
                 "id": "25"
             },
             {
@@ -455,6 +495,7 @@
                 "brandName": "Turtle",
                 "desc": "Men Printed Round Neck Red T-Shirt",
                 "price": 449,
+                "category":"fashion",
                 "id": "26"
             },
             {
@@ -463,6 +504,7 @@
                 "brandName": "Turtle",
                 "desc": "Men Regular Fit Checkered Casual Shirt",
                 "price": 839,
+                "category":"fashion",
                 "id": "27"
             },
             {
@@ -471,6 +513,7 @@
                 "brandName": "Turtle",
                 "desc": "Men Super Slim Fit Solid Cut Away Collar Casual Shirt",
                 "price": 867,
+                "category":"fashion",
                 "id": "28"
             },
             {
@@ -479,6 +522,7 @@
                 "brandName": "Turtle",
                 "desc": "Men Solid Turtle Neck Black T-Shirt",
                 "price": 759,
+                "category":"fashion",
                 "id": "29"
             },
             {
@@ -487,6 +531,7 @@
                 "brandName": "Turtle",
                 "desc": "Men Slim Fit Printed Spread Collar Casual Shirt",
                 "price": 859,
+                "category":"fashion",
                 "id": "30"
             },
             {
@@ -495,6 +540,7 @@
                 "brandName": "Adidas",
                 "desc": "Men Solid Green Track Pants",
                 "price": 924,
+                "category":"fashion",
                 "id": "31"
             },
             {
@@ -503,6 +549,7 @@
                 "brandName": "Adidas",
                 "desc": "Men Slim Mid Rise Dark Blue Jeans",
                 "price": 424,
+                "category":"fashion",
                 "id": "32"
             },
             {
@@ -511,6 +558,7 @@
                 "brandName": "Adidas",
                 "desc": "Men Cargos",
                 "price": 869,
+                "category":"fashion",
                 "id": "33"
             },
             {
@@ -519,6 +567,7 @@
                 "brandName": "Adidas",
                 "desc": "Men Regular Mid Rise Blue Jeans",
                 "price": 629,
+                "category":"fashion",
                 "id": "34"
             },
             {
@@ -527,6 +576,7 @@
                 "brandName": "Adidas",
                 "desc": "Men Regular Fit Grey Cotton Blend Trousers",
                 "price": 389,
+                "category":"fashion",
                 "id": "35"
             },
             {
@@ -535,6 +585,7 @@
                 "brandName": "Raymond",
                 "desc": "Men Regular Fit Grey Cotton Blend Trousers",
                 "price": 419,
+                "category":"fashion",
                 "id": "36"
             },
             {
@@ -543,6 +594,7 @@
                 "brandName": "Raymond",
                 "desc": "Men Regular Fit Black Cotton Blend Trousers",
                 "price": 399,
+                "category":"fashion",
                 "id": "37"
             },
             {
@@ -551,6 +603,7 @@
                 "brandName": "Raymond",
                 "desc": "Men Skinny Mid Rise Blue Jeans",
                 "price": 999,
+                "category":"fashion",
                 "id": "38"
             },
             {
@@ -559,6 +612,7 @@
                 "brandName": "Raymond",
                 "desc": "Men Slim Mid Rise Dark Blue Jeans",
                 "price": 1049,
+                "category":"fashion",
                 "id": "39"
             },
             {
@@ -567,6 +621,7 @@
                 "brandName": "Raymond",
                 "desc": "Men Skinny Low Rise Dark Blue Jeans",
                 "price": 869,
+                "category":"fashion",
                 "id": "40"
             },
             {
@@ -575,6 +630,7 @@
                 "brandName": "Diesel",
                 "desc": "Men Tapered Fit Low Rise Grey Jeans",
                 "price": 699,
+                "category":"fashion",
                 "id": "41"
             },
             {
@@ -583,6 +639,7 @@
                 "brandName": "Diesel",
                 "desc": "Men Skinny Mid Rise Light Blue Jeans",
                 "price": 959,
+                "category":"fashion",
                 "id": "42"
             },
             {
@@ -591,6 +648,7 @@
                 "brandName": "Diesel",
                 "desc": "Men Solid Multicolor Track Pants",
                 "price": 339,
+                "category":"fashion",
                 "id": "43"
             },
             {
@@ -599,6 +657,7 @@
                 "brandName": "Diesel",
                 "desc": "Men Skinny Mid Rise Blue Jeans",
                 "price": 879,
+                "category":"fashion",
                 "id": "44"
             },
             {
@@ -607,6 +666,7 @@
                 "brandName": "Diesel",
                 "desc": "Men Camouflage Green Track Pants",
                 "price": 399,
+                "category":"fashion",
                 "id": "45"
             },
             {
@@ -615,6 +675,7 @@
                 "brandName": "Diesel",
                 "desc": "Men Skinny Mid Rise Blue Jeans",
                 "price": 569,
+                "category":"fashion",
                 "id": "46"
             },
             {
@@ -623,6 +684,7 @@
                 "brandName": "Diesel",
                 "desc": "Men Slim Mid Rise Light Blue Jeans",
                 "price": 499,
+                "category":"fashion",
                 "id": "47"
             },
             {
@@ -631,6 +693,7 @@
                 "brandName": "Diesel",
                 "desc": "Pack of 2 Men Printed Olive, Blue Track Pants",
                 "price": 379,
+                "category":"fashion",
                 "id": "48"
             },
             {
@@ -639,6 +702,7 @@
                 "brandName": "Diesel",
                 "desc": "Pack of 2 Men Checkered Blue, Black Track Pants",
                 "price": 489,
+                "category":"fashion",
                 "id": "49"
             },
             {
@@ -647,6 +711,7 @@
                 "brandName": "Diesel",
                 "desc": "Pack of 2 Men Solid Black, Blue Track Pants",
                 "price": 359,
+                "category":"fashion",
                 "id": "50"
             },
             {
@@ -655,6 +720,7 @@
                 "brandName": "Calvin Klein",
                 "desc": "Men Self Design Grey Track Pants",
                 "price": 299,
+                "category":"fashion",
                 "id": "51"
             },
             {
@@ -663,6 +729,7 @@
                 "brandName": "Calvin Klein",
                 "desc": "Men Cargos",
                 "price": 479,
+                "category":"fashion",
                 "id": "52"
             },
             {
@@ -671,6 +738,7 @@
                 "brandName": "Calvin Klein",
                 "desc": "Men Regular Mid Rise Blue Jeans",
                 "price": 569,
+                "category":"fashion",
                 "id": "53"
             },
             {
@@ -679,6 +747,7 @@
                 "brandName": "Calvin Klein",
                 "desc": "Men Regular Fit Grey Viscose Rayon Trousers",
                 "price": 999,
+                "category":"fashion",
                 "id": "54"
             },
             {
@@ -687,6 +756,7 @@
                 "brandName": "Calvin Klein",
                 "desc": "Men Slim Low Rise Blue Jeans",
                 "price": 989,
+                "category":"fashion",
                 "id": "55"
             },
             {
@@ -695,6 +765,7 @@
                 "brandName": "Calvin Klein",
                 "desc": "Men Slim Mid Rise Silver Jeans",
                 "price": 369,
+                "category":"fashion",
                 "id": "56"
             },
             {
@@ -703,6 +774,7 @@
                 "brandName": "Calvin Klein",
                 "desc": "Men Skinny Mid Rise Grey Jeans",
                 "price": 424,
+                "category":"fashion",
                 "id": "57"
             },
             {
@@ -711,6 +783,7 @@
                 "brandName": "Calvin Klein",
                 "desc": "Men Solid Grey Track Pants",
                 "price": 669,
+                "category":"fashion",
                 "id": "58"
             },
             {
@@ -719,6 +792,7 @@
                 "brandName": "Calvin Klein",
                 "desc": "Men Tapered Fit Mid Rise Grey Jeans",
                 "price": 649,
+                "category":"fashion",
                 "id": "59"
             },
             {
@@ -727,7 +801,13 @@
                 "brandName": "Calvin Klein",
                 "desc": "Men Jogger Fit Mid Rise Grey Jeans",
                 "price": 849,
+                "category":"fashion",
                 "id": "60"
             }
+        ],
+        "book":[
+          {
+
+          }
         ]
   }
