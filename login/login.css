@@ -153,6 +153,9 @@ a{
     display: inline-block;
     margin-top: 5rem;
 }
+.bottom2{
+    text-align: center;
+}
 
 
 .cross{
@@ -160,12 +163,31 @@ a{
     position: relative;
     width: 62%;
     transform: translateX(0);
+     /* opacity: 0; */
+     /* transform: translate(-50%,-50%) scale(1.25);
+     transition: top 0ms ease-in-out 200ms,
+                 opacity 200ms ease-in-out 0ms,
+                 transform 20ms ease-in-out 0ms; */
 }
 .cros{
     position: absolute;
     right: 100px;
     color:#fff;
     top:10px;
+    cursor: pointer;
+    /* opacity: 0; */
+    transform: translate(-50%,-50%) scale(1.25);
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+.cros.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
 }
 
 .fa-xmark{
