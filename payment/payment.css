@@ -8,6 +8,11 @@ body{
     height: 57px;
     background-color: #2874F0;
 }
+#nv>img{
+    width: 57px;
+    height: 57px;
+    margin-left: 150px;
+}
 #one{
     width: 850px;
     height: 800px;
@@ -17,7 +22,6 @@ body{
 #two{
     width: 400px;
     height: 300px;
-    border: 2px solid black;
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -80,4 +84,43 @@ select{
     justify-content: space-between;
     width: 350px;
     margin-left: 30px;
+}
+#align2 > div > input{
+    margin-left: 100px;
+}
+#align2 > div > button{
+    margin-left: 100px;
+}
+#align > div > input{
+    margin-left: 80px;
+}
+#align > div > button{
+    margin-left: 80px;
+}
+#two1{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding: 5px;
+}
+#two2{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#chg{
+    width: 400px;
+    height: 85px;
+}
+.login{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 180px;
+}
+#addr{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 490px;
+}
+#payment{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#two{
+    margin-bottom: 50px;
 }
