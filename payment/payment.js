@@ -59,6 +59,7 @@ function check(LS){
     if(num2.value==x){
       alert("ORDER CONFIRM SUCCESSFULLY")
       document.querySelector("#payment").style.display="none";
+      window.location.href="./paymentsuccessful.html"
     }
     else{
       alert("Enter Valid OTP")
@@ -147,6 +148,6 @@ function openform3(){
   document.querySelector("#product-button").style.display="inline";
 }
 function openform4(){
-  document.querySelector("#payment").style.display="inline-block";
-  //document.querySelector("#product-button").style.display="inline";
+  document.querySelector("#payment").style.display="block";
+  document.querySelector("#product-button").style.display="inline";
 }
