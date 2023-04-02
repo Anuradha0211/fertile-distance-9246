@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fashion</title>
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/bottomnav.css" />
+    <link rel="stylesheet" href="../styles/productbody.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/bottompart.css" />
     <style>
       .fashionContainer {
         display: flex;
@@ -43,7 +48,8 @@
       }
       .card > .boxImg {
         width: 200px;
-        height: 250px;
+        /* height: 250px; */
+        height: 50%;
         margin: auto;
         margin-top: 0;
       }
@@ -54,8 +60,10 @@
       }
       .card > .boxDetails {
         width: 100%;
+        height: 40%;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-items: flex-start;
         align-items: center;
       }
       .card > .boxDetails h3 {
@@ -68,6 +76,24 @@
         font-weight: 600;
         color: rgb(7, 79, 79);
       }
+      .card > .boxDetails button {
+        /* position: absolute; */
+        /* display: inline-block; */
+        /* top: 2px;
+    right: -8px; */
+
+        /* cursor: pointer; */
+
+        padding: 8px;
+        border-radius: 10px;
+        background-color: red;
+        border: red;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        
+      }
+
       #pagination-wrapper {
         width: 100%;
         display: flex;
@@ -86,6 +112,200 @@
     </style>
   </head>
   <body>
+    <div id="navbar">
+      <div id="topnav">
+        <img src="./Images/Freecraft Logo.jpeg" alt="Logo Error" />
+        <div id="navelem">
+          <input
+            type="text"
+            placeholder="Search for products, brands, and more"
+          />
+          <div class="more">
+            <button class="morebtn" id="alogin">Login</button>
+            <div class="more-content">
+              <a href="#">New Customer? <span>Sign Up</span></a>
+              <a href="#">My Profile</a>
+              <a href="#">Flipkart Plus Zone</a>
+              <a href="#">Orders</a>
+              <a href="#">Wishlist</a>
+              <a href="#">Rewards</a>
+              <a href="#">Gift Cards</a>
+            </div>
+          </div>
+          <a href="">Become a Seller</a>
+          <div class="more">
+            <button class="morebtn">More</button>
+            <div class="more-content">
+              <a href="#">Notification Preferences</a>
+              <a href="#">24x7 Customer Care</a>
+              <a href="#">Advertise</a>
+              <a href="#">Download App</a>
+            </div>
+          </div>
+          <a href="">Cart</a>
+        </div>
+      </div>
+      <div id="bottomnav">
+        <div id="navproduct">
+          <a href=""
+            ><div>
+              <img
+                src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100"
+                alt="Error"
+              />
+              <h5>Grocery</h5>
+            </div></a
+          >
+          <a href=""
+            ><div>
+              <img
+                src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"
+                alt="Error"
+              />
+              <h5>Mobiles</h5>
+            </div></a
+          >
+          <div class="productdropdown">
+            <a href="" class="productbtn">
+              <img
+                src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/d34810848b2895c9.png?q=100"
+                alt="Error"
+              />
+              <h5>Fashion</h5>
+            </a>
+            <div class="productdd-content">
+              <a href="#">Men's Top Wear</a>
+              <a href="#">Men's Bottom Wear</a>
+              <a href="#">Women Ethnic</a>
+              <a href="#">Women Western</a>
+              <a href="#">Men Footwear</a>
+              <a href="#">Women Footwear</a>
+              <a href="#">Watches & accessories</a>
+              <a href="#">Bags, Suitcases & Luggage</a>
+              <a href="#">Kids</a>
+              <a href="#">Essentials</a>
+              <a href="#">Winter</a>
+            </div>
+          </div>
+
+          <div class="productdropdown">
+            <a href="" class="productbtn">
+              <img
+                src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100"
+                alt="Error"
+              />
+              <h5>Electronics</h5>
+            </a>
+            <div class="productdd-content">
+              <a href="#">Audio</a>
+              <a href="#">Electronics GST Store</a>
+              <a href="#">Cameras & Accessories</a>
+              <a href="#">Computer Peripherals</a>
+              <a href="#">Gaming</a>
+              <a href="#">Health & Personal Care</a>
+              <a href="#">Laptop Accessories</a>
+              <a href="#">Laptop & Desktop</a>
+              <a href="#">Mobile Accessories</a>
+              <a href="#">PowerBank</a>
+              <a href="#">Smart Home Automation</a>
+              <a href="#">Smart Wearables</a>
+              <a href="#">Storage</a>
+              <a href="#">Tablets</a>
+            </div>
+          </div>
+
+          <div class="productdropdown">
+            <a href="" class="productbtn">
+              <img
+                src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100"
+                alt="Error"
+              />
+              <h5>Home</h5>
+            </a>
+            <div class="productdd-content">
+              <a href="#">Home Furnishings</a>
+              <a href="#">Furniture Studio</a>
+              <a href="#">Living Room Furniture</a>
+              <a href="#">Kitchen & Dining</a>
+              <a href="#">Bedroom Furniture</a>
+              <a href="#">Home Decor</a>
+              <a href="#">Tools & Utility</a>
+              <a href="#">Work Space Furniture</a>
+              <a href="#">Lightnings & Electricals</a>
+              <a href="#">Space Saving Furniture</a>
+              <a href="#">Cleaning & Bath</a>
+              <a href="#">Kids Furniture</a>
+              <a href="#">Pet & Gardening</a>
+            </div>
+          </div>
+          <a href=""
+            ><div>
+              <img
+                src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100"
+                alt="Error"
+              />
+              <h5>Appliances</h5>
+            </div></a
+          >
+          <a href=""
+            ><div>
+              <img
+                src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100"
+                alt="Error"
+              />
+              <h5>Travel</h5>
+            </div></a
+          >
+          <a href=""
+            ><div>
+              <img
+                src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100"
+                alt="Error"
+              />
+              <h5>Top Offers</h5>
+            </div></a
+          >
+
+          <div class="productdropdown">
+            <a href="" class="productbtn">
+              <img
+                src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100"
+                alt="Error"
+              />
+              <h5>Beauty, Toys & More</h5>
+            </a>
+            <div class="productdd-content">
+              <a href="#">Beauty & Personal Care</a>
+              <a href="#">Men's Grooming</a>
+              <a href="#">Food & Drinks</a>
+              <a href="#">Nutrition & Health Care</a>
+              <a href="#">Baby Care</a>
+              <a href="#">Toys & School Supplies</a>
+              <a href="#">Sports & Fitness</a>
+              <a href="#">Books</a>
+              <a href="#">Music</a>
+              <a href="#">Stationery & Office Supplies</a>
+              <a href="#">Auto Accessories</a>
+              <a href="#">Safety & Hygiene Essentials</a>
+            </div>
+          </div>
+
+          <div class="productdropdown">
+            <a href="" class="productbtn">
+              <img
+                src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/05d708653beff580.png?q=100"
+                alt="Error"
+              />
+              <h5>Two Wheelers</h5>
+            </a>
+            <div class="productdd-content">
+              <a href="#">Petrol Vehicles</a>
+              <a href="#">Electric Vehicles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="fashionContainer">
       <div class="fashionAside">
         <div class="filterProduct">
@@ -137,7 +357,7 @@
   <script>
     let containerEl = document.getElementById("mainside");
     let paginationWrapper = document.getElementById("pagination-wrapper");
-
+    let wishList = JSON.parse(localStorage.getItem('wishlist'))||[];
     window.addEventListener("load", function () {
       fetchData();
     });
@@ -182,15 +402,12 @@
       return btn;
     }
 
+  
+
     function displayData(data) {
       containerEl.innerHTML = null;
       data.forEach((element) => {
-        // anchor tag each card
-        let aTag = document.createElement("a");
-        aTag.target = "_blank";
-        aTag.href = "../cart/something.html";
-
-        // card for sigle data
+        
         let card = document.createElement("div");
         card.classList.add("card");
 
@@ -203,6 +420,7 @@
 
         // details box
         let divDetails = document.createElement("div");
+
         divDetails.classList.add("boxDetails");
 
         let name = document.createElement("h3");
@@ -214,12 +432,43 @@
         let brandName = document.createElement("p");
         brandName.textContent = element.brandName;
 
-        divDetails.append(name, brandName, price); //here appending the details
+         let wishlist = document.createElement("button");
+        wishlist.textContent = "WishList";
+        wishlist.addEventListener("click",(e)=>{
+          e.preventDefault();
+          if(!auth){
+            alert('please login first');
+            window.location.href = '../login/login.html';
+          }else{
+           wishList.forEach((el)=>{
+            if(el.id == element.id)return;
+           })
+           wishList.push(element);
+           localStorage.setItem('wishlist',JSON.stringify(wishList));
+          }
+          
+        })
+       
+
+        let pdp = document.createElement("button");
+        pdp.textContent = "add Product";
+        pdp.addEventListener('click',()=>{
+          localStorage.setItem("prod",JSON.stringify(element));
+          window.location.href = '../cart/pdp.html';
+        })
+        
+        
+        
+
+       
+        divDetails.append(name, brandName, price, wishlist, pdp); //here appending the details
         card.append(divImg, divDetails);
-        aTag.append(card);
-        containerEl.append(aTag);
+        containerEl.append(card);
       });
     }
+
+    
+
     //Sorting
     let sortAtoZBtn = document.getElementById("sort-low-to-high");
     sortAtoZBtn.addEventListener("click", () => {
