@@ -51,6 +51,7 @@ loginBtn.addEventListener("click", function() {
          auth = email;
          localStorage.setItem('auth',email);  
         alert("Login successful!");
+        window.location.href = "../index.html"
       } else {
         alert("Wrong email or password!");
       }
@@ -60,6 +61,6 @@ loginBtn.addEventListener("click", function() {
     });
 });
 
-function display(){
-  window.location.href = "/index.html";
-}
+// function display(){
+//   window.location.href = "../index.html";
+// }
