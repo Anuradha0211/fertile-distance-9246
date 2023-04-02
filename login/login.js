@@ -20,7 +20,7 @@
 
 // generateOTP();
           
-
+let auth = localStorage.getItem('auth')||false;
 let email = document.getElementById("email");
 let password = document.getElementById("password")
 let Login_Btn = document.getElementById("login-btn")
@@ -57,6 +57,7 @@ function login(obj){
         let count = 0;
         data.forEach((e) => {
             if(e.email == obj.email && e.password == obj.password){
+                localStorage.setItem('auth',e.email);
                 alert("login SucessfSully");
                 display();
             }else{
