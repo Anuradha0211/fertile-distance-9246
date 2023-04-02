@@ -5,7 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fashion</title>
-    <style>
+    <!-- <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/bottomnav.css" />
+    <link rel="stylesheet" href="../styles/productbody.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/bottompart.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- for footer -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- <style>
       .fashionContainer {
         display: flex;
         width: 100%;
@@ -37,13 +48,13 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 100%;
-        border-radius: 10%;
+        height: 95%;
+        border-radius: 5%;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       }
       .card > .boxImg {
         width: 200px;
-        height: 250px;
+        height: 50%;
         margin: auto;
         margin-top: 0;
       }
@@ -54,9 +65,12 @@
       }
       .card > .boxDetails {
         width: 100%;
+        height: 50%;
         display: flex;
         flex-direction: column;
+        justify-items: space-between;
         align-items: center;
+        margin-top: 30px;
       }
       .card > .boxDetails h3 {
         font-size: 25px;
@@ -68,6 +82,21 @@
         font-weight: 600;
         color: rgb(7, 79, 79);
       }
+      .card > .boxDetails > div {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .card > .boxDetails button {
+        padding: 8px;
+        border-radius: 10px;
+        background-color: red;
+        border: red;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+      }
+
       #pagination-wrapper {
         width: 100%;
         display: flex;
@@ -83,13 +112,197 @@
         font-size: 25px;
         font-weight: 500;
       }
-    </style>
+    </style> -->
   </head>
   <body>
+    <header>
+      <div class="upperNavBar">
+        <div class="logo">
+          <img src="../Images/Freecraft.png" alt="Logo Error" />
+        </div>
+        <div class="search-box">
+          <input
+            type="search"
+            name="search"
+            id="frontEndsearch"
+            placeholder="Search Here what you want "
+          />
+        </div>
+        <div class="login">
+          <button>
+            <a href="../login/login.html">Login/Register</a>
+          </button>
+          <div class="dropdown-content-content">
+            <a href="#">New Customer? <span>Sign Up</span></a>
+            <a href="#">My Profile</a>
+            <a href="#">Flipkart Plus Zone</a>
+            <a href="#">Orders</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Rewards</a>
+            <a href="#">Gift Cards</a>
+          </div>
+        </div>
+        <div class="becomeSeller">
+          <a href="#">Become a Seller</a>
+        </div>
+        <div class="sidebox">
+          <div class="wishlist">
+            <a href="../cart/wishlist.html">Wishlist</a>
+          </div>
+          <div class="cart"><a href="../cart/cart.html">Cart</a></div>
+        </div>
+      </div>
+      <div class="bottomNavBar">
+        <nav class="navbar">
+          <ul class="navbar-links">
+            <li class="navbar-dropdown">
+              <a href="groceries.html">
+                <img
+                  src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100"
+                  alt="Error"
+                />
+                <h5>Grocery</h5>
+              </a>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="mobile.html">
+                <img
+                  src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"
+                  alt="Error"
+                />
+                <h5>Mobiles</h5>
+              </a>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="fashion.html">
+                <img
+                  src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/d34810848b2895c9.png?q=100"
+                  alt="Error"
+                />
+                <h5>Fashion</h5>
+              </a>
+              <div class="dropdown">
+                <a href="#">Men's Top Wear</a>
+                <a href="#">Men's Bottom Wear</a>
+                <a href="#">Women Ethnic</a>
+                <a href="#">Women Western</a>
+                <a href="#">Men Footwear</a>
+                <a href="#">Women Footwear</a>
+                <a href="#">Watches & accessories</a>
+                <a href="#">Bags, Suitcases & Luggage</a>
+                <a href="#">Kids</a>
+                <a href="#">Essentials</a>
+                <a href="#">Winter</a>
+              </div>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="electronics.html">
+                <img
+                  src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100"
+                  alt="Error"
+                />
+                <h5>Electronics</h5>
+              </a>
+              <div class="dropdown">
+                <a href="#">Audio</a>
+                <a href="#">Electronics GST Store</a>
+                <a href="#">Cameras & Accessories</a>
+                <a href="#">Computer Peripherals</a>
+                <a href="#">Gaming</a>
+                <a href="#">Health & Personal Care</a>
+                <a href="#">Laptop Accessories</a>
+                <a href="#">Laptop & Desktop</a>
+                <a href="#">Mobile Accessories</a>
+                <a href="#">PowerBank</a>
+                <a href="#">Smart Home Automation</a>
+                <a href="#">Smart Wearables</a>
+                <a href="#">Storage</a>
+                <a href="#">Tablets</a>
+              </div>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="home.html">
+                <img
+                  src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100"
+                  alt="Error"
+                />
+                <h5>Home</h5>
+              </a>
+              <div class="dropdown">
+                <a href="#">Home Furnishings</a>
+                <a href="#">Furniture Studio</a>
+                <a href="#">Living Room Furniture</a>
+                <a href="#">Kitchen & Dining</a>
+                <a href="#">Bedroom Furniture</a>
+                <a href="#">Home Decor</a>
+                <a href="#">Tools & Utility</a>
+                <a href="#">Work Space Furniture</a>
+                <a href="#">Lightnings & Electricals</a>
+                <a href="#">Space Saving Furniture</a>
+                <a href="#">Cleaning & Bath</a>
+                <a href="#">Kids Furniture</a>
+                <a href="#">Pet & Gardening</a>
+              </div>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="appliances.html">
+                <img
+                  src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100"
+                  alt="Error"
+                />
+                <h5>Appliances</h5>
+              </a>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="travel.html">
+                <img
+                  src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100"
+                  alt="Error"
+                />
+                <h5>Travel</h5>
+              </a>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="book.html">
+                <img
+                  src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100"
+                  alt="Error"
+                />
+                <h5>Books</h5>
+              </a>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="skinproduct.html">
+                <img
+                  src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100"
+                  alt="Error"
+                />
+                <h5>Skin Product</h5>
+              </a>
+              <div class="dropdown">
+                <a href="#">Beauty & Personal Care</a>
+                <a href="#">Men's Grooming</a>
+                <a href="#">Food & Drinks</a>
+                <a href="#">Nutrition & Health Care</a>
+                <a href="#">Baby Care</a>
+                <a href="#">Toys & School Supplies</a>
+                <a href="#">Sports & Fitness</a>
+                <a href="#">Books</a>
+                <a href="#">Music</a>
+                <a href="#">Stationery & Office Supplies</a>
+                <a href="#">Auto Accessories</a>
+                <a href="#">Safety & Hygiene Essentials</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div class="fashionContainer">
       <div class="fashionAside">
         <div class="filterProduct">
           <h2>Filter based On the brand</h2>
+          <!-- <div></div> -->
           <button
             id="filter-less-than-300"
             class="u-full-width button button-primary"
@@ -133,11 +346,84 @@
       </div>
     </div>
     <div class="pagination-wrapper" id="pagination-wrapper"></div>
+
+    <footer class="footer-sec">
+      <div class="main">
+        <div class="logo row">
+          <div class="footer-header">
+            <img src="../Images/Freecraft.png" class="manik" alt="" />
+          </div>
+          <div class="logo-des">
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+
+            <a href="#" class="btn-know">Know More</a>
+          </div>
+        </div>
+
+        <div class="office row">
+          <div class="footer-header">
+            <h3>Office</h3>
+          </div>
+          <div class="office-des">
+            <p>
+              here are <br />
+              many variations of passages<br />of Lorem Ipsum<br />available
+            </p>
+
+            <a href="#">freecraft1999.haker2003@gmail.com</a>
+
+            <p class="num">+91-9999999999</p>
+          </div>
+        </div>
+
+        <div class="link row">
+          <div class="footer-header">
+            <h3>Links</h3>
+          </div>
+
+          <div class="link-des">
+            <a href="#" class="footer-links">Home</a>
+            <a href="#" class="footer-links">About</a>
+            <a href="#" class="footer-links">Services</a>
+            <a href="#" class="footer-links">Galary</a>
+            <a href="#" class="footer-links">Contact</a>
+          </div>
+        </div>
+
+        <div class="newsletter row">
+          <div class="footer-header">
+            <h3>Newsletter</h3>
+          </div>
+          <div class="newsletter-des">
+            <div class="subcribe">
+              <i class="sub-icon ri-mail-check-fill"></i>
+              <input type="mail" placeholder="Enter Email ID" required />
+              <i class="sub-icon ri-arrow-right-line"></i>
+            </div>
+            <div class="icons">
+              <a href="#"><i class="social-icon ri-facebook-fill"></i></a>
+              <a href="#"><i class="social-icon ri-instagram-line"></i></a>
+              <a href="#"><i class="social-icon ri-linkedin-fill"></i></a>
+              <a href="#"><i class="social-icon ri-github-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <hr />
+
+        <p>© Copyright 2022 Manik Maity.</p>
+      </div>
+    </footer>
   </body>
   <script>
     let containerEl = document.getElementById("mainside");
     let paginationWrapper = document.getElementById("pagination-wrapper");
-    let wishList = JSON.parse(localStorage.getItem('wishlist'))||[];
+    let wishList = JSON.parse(localStorage.getItem("wishlist")) || [];
     window.addEventListener("load", function () {
       fetchData();
     });
@@ -185,12 +471,6 @@
     function displayData(data) {
       containerEl.innerHTML = null;
       data.forEach((element) => {
-        // anchor tag each card
-        let aTag = document.createElement("a");
-        aTag.target = "_blank";
-        aTag.href = "../cart/something.html";
-
-        // card for sigle data
         let card = document.createElement("div");
         card.classList.add("card");
 
@@ -203,6 +483,7 @@
 
         // details box
         let divDetails = document.createElement("div");
+
         divDetails.classList.add("boxDetails");
 
         let name = document.createElement("h3");
@@ -213,36 +494,39 @@
 
         let brandName = document.createElement("p");
         brandName.textContent = element.brandName;
+
+        let divBtn = document.createElement("div");
+
         let wishlist = document.createElement("button");
         wishlist.textContent = "WishList";
-        wishlist.addEventListener("click",(e)=>{
+        wishlist.addEventListener("click", (e) => {
           e.preventDefault();
-          if(!auth){
-            alert('please login first');
-            window.location.href = '../login/login.html';
-          }else{
-           wishList.forEach((el)=>{
-            if(el.id == element.id)return;
-           })
-           wishList.push(element);
-           localStorage.setItem('wishlist',JSON.stringify(wishList));
+          if (!auth) {
+            alert("please login first");
+            window.location.href = "../login/login.html";
+          } else {
+            wishList.forEach((el) => {
+              if (el.id == element.id) return;
+            });
+            wishList.push(element);
+            localStorage.setItem("wishlist", JSON.stringify(wishList));
           }
-          
-        })
-       
+        });
 
         let pdp = document.createElement("button");
         pdp.textContent = "add Product";
-        pdp.addEventListener('click',()=>{
-          localStorage.setItem("prod",JSON.stringify(element));
-          window.location.href = '../cart/pdp.html';
-        })
-        divDetails.append(name, brandName, price,wishlist,pdp); //here appending the details
+        pdp.addEventListener("click", () => {
+          localStorage.setItem("prod", JSON.stringify(element));
+          window.location.href = "../cart/pdp.html";
+        });
+
+        divBtn.append(wishlist, pdp);
+        divDetails.append(name, brandName, price, divBtn); //here appending the details
         card.append(divImg, divDetails);
-        aTag.append(card);
-        containerEl.append(aTag);
+        containerEl.append(card);
       });
     }
+
     //Sorting
     let sortAtoZBtn = document.getElementById("sort-low-to-high");
     sortAtoZBtn.addEventListener("click", () => {
@@ -314,5 +598,38 @@
           console.log(err);
         });
     });
+
+    //  this is for the search functinality
+
+    const searchInput = document.querySelector("#frontEndsearch");
+
+    searchInput.addEventListener("input", function (e) {
+      const searchQuery = e.target.value.toLowerCase().trim();
+
+      fetch("http://localhost:1999/products")
+        .then((response) => {
+          return response.json();
+        })
+        .then((users) => {
+          const filteredUsers = searchUsersByName(users, searchQuery);
+          displayData(filteredUsers);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    });
+
+    function searchUsersByName(users, searchQuery) {
+      if (searchQuery === "") {
+        return users;
+      } else {
+        return users.filter(
+          (user) =>
+            user.name.toLowerCase().includes(searchQuery) ||
+            user.brandName.toLowerCase().includes(searchQuery) ||
+            user.category.toLowerCase().includes(searchQuery)
+        );
+      }
+    }
   </script>
 </html>
