@@ -15,7 +15,7 @@ body{
 }
 #topnav>img{
     height: 55px;
-    margin-left: 200px;
+    margin-left: 12%;
 
 }
 #navelem{      
@@ -24,12 +24,13 @@ body{
 }
 #navelem>input{
     width:50%;
-    margin-left: 10px;
+    margin-left: 2%;
     /* margin-right: 30px; */
-    padding: 8px 0px 8px 15px;
+    padding: 0.8% 0% 0.8% 1.5%;
 }
 #navelem>a{
-    margin-left: 43px;
+    margin-left: 4.5%;   
+    /* margin-right: %; */
     color: white;
     text-decoration: none;
     font-weight: bold; 
@@ -38,8 +39,9 @@ body{
     background-color: white;
     color: #0E74EC;
     font-weight: 550;
-    padding: 5px 40px 5px 40px;
+    padding: 8% 50% 8% 50%;
     margin-bottom: 10px;
+    text-decoration: none;
 }
 span{
   color: #0E74EC;
@@ -50,7 +52,7 @@ span{
     padding: 16px;
     font-size: 16px;
     border: none;
-    margin-left: 40px;
+    margin-left: 4%;
   }
   
   /* The container <div> - needed to position the dropdown content */
