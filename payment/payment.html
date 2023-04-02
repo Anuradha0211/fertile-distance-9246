@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./payment.css">
 </head>
 <body>
-    <div id="nv"></div>
+    <div id="nv">
+        <img src="./Logo.jpeg" alt="Logo Error">
+    </div>
     <div id="main">
         <div id="one">
             <div id="login">
@@ -34,8 +36,8 @@
                             &nbsp&nbsp&nbsp&nbsp<span>2</span> &nbsp;
                             <span>DELIVERY ADDRESS</span>
                         </div>
-                    </div> <br><br>
-                    <div id="addr">
+                    </div>
+                    <div id="addr"> <br><br>
                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" placeholder="Name" id="name">
                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" placeholder="10-digit mobile number" id="number"> <br><br>
                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="number" placeholder="Pincode" id="pincode">
@@ -108,8 +110,8 @@
                             &nbsp&nbsp&nbsp&nbsp<span>4</span> &nbsp;
                             <span>PAYMENT OPTIONS</span>
                         </div>
-                    </div> <br><br>
-                    <div id="payment">
+                    </div>
+                    <div id="payment"> <br><br>
                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="paytm" id="upi">&nbsp&nbsp
                           <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/batman-returns/logos/UPI.gif" alt="err" class="im">&nbsp&nbsp
                           <span>UPI</span> <br> <br>
@@ -125,7 +127,7 @@
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button >CONTINUE</button> <br><br>
-                          </div>
+                          </div><br>
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -134,7 +136,7 @@
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="radio" name="paytm2" id="paytm3"> Your UPI ID <br> <br>
                           <div id="align2" style="display:none;">
-                            <div><input type="text" placeholder="Enter your UPI ID"></div>
+                            <div><input type="text" placeholder="Enter your UPI ID"></div><br>
                             <div><button>CONTINUE</button></div>
                           </div>
                           </div>
@@ -155,7 +157,17 @@
                 </div>
             </div>
         </div>
-        <div id="two"></div>
+        <div id="two">
+             <div id="two1">
+                  <h2>PRICE DETAILS</h2 >
+                  <h3>Price</h3>
+                  <h3>Delivery Charges</h3>
+                  <h3><b>Total Payable</b></h3> <br><br>
+            </div>
+             <div id="two2">
+                  <div><img id="chg" src="https://rukminim1.flixcart.com/lockin/2000/2000/images/promotion_banner_v2_inactive_2.png?q=50" alt="Error"></div>
+             </div>
+        </div>
     </div>
 </body>
 <script src="./payment.js"></script>

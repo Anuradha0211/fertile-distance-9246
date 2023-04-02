@@ -1,6 +1,6 @@
-/* #navbar{
-    border: 2px solid red;
-} */
+body{
+  margin-top: 55px;
+}
 #topnav{
     /* border: 2px solid green; */
     position: fixed;
@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     z-index: 1;
+    margin-bottom: 55px;
 }
 #topnav>img{
     height: 55px;

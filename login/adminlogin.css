@@ -196,6 +196,7 @@ body {
     border: none;
     height: 23px;
     border-radius: 30px;
+    cursor: pointer;
     background-image: linear-gradient(
       to right,
       #845ec2,
