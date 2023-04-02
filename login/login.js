@@ -1,7 +1,7 @@
 
 
 
-// const sidebar=document.querySelector(".sidebar");
+const sidebar=document.querySelector(".sidebar");
 // const cross=document.querySelector(".fa-xmark");
 // const black=document.querySelector(".black");
 // const sidebtn=document.querySelector(".second-1");
@@ -63,23 +63,3 @@ loginBtn.addEventListener("click", function() {
 function display(){
   window.location.href = "/index.html";
 }
-
-
-
-// const loginButton = document.getElementById('alogin');
-// const loginPopup = document.getElementById('login-popup');
-// const closePopup = document.getElementById('close-popup');
-
-// loginButton.addEventListener('click', () => {
-//   loginPopup.style.display = '';
-// });
-
-// closePopup.addEventListener('click', () => {
-//   loginPopup.style.display = 'none';
-// });
-
-// window.addEventListener('click', (event) => {
-//   if (event.target === loginPopup) {
-//     loginPopup.style.display = 'none';
-//   }
-// });
