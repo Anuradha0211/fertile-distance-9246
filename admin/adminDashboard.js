@@ -31,9 +31,9 @@ fetch(`http://localhost:1999/mixProducts`)
       const tr = document.createElement("tr");
       const trContent = `
                      
-                        <td>${order.name}</td>
+                        <td>${order.title}</td>
                         <td>${order.id}</td>
-                        <td>${order.brandName}</td>
+                        <td>${order.category}</td>
                         <td>${order.price}</td>
                         <td>DONE</td>
                     `;
@@ -50,5 +50,5 @@ fetch(`http://localhost:1999/mixProducts`)
 
 let logOut = document.getElementById("logout");
 logOut.addEventListener("click", () => {
-  window.location.href = "/index.html";
+  window.location.href = "../index.html";
 });
