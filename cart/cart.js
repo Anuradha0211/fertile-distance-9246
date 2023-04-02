@@ -1,7 +1,7 @@
 let nav = document.querySelector("nav");
 nav.innerHTML = `<div id="navbar">
 <div id="topnav">
-  <img src="./Images/Freecraft Logo.jpeg" alt="Logo Error" />
+  <img src="../Images/Freecraft Logo.jpeg" alt="Logo Error" />
   <div id="navelem">
     <input
       type="text"

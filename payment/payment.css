@@ -124,3 +124,16 @@ select{
 #two{
     margin-bottom: 50px;
 }
+.size{
+    display: flex;
+}
+.size > div{
+    padding: 20px;
+}
+.size > div > img{
+    width: 230px;
+    padding-bottom: 10px;
+}
+.size :nth-child(1) > :nth-child(2) > * {
+    margin-left: 10px;
+}
