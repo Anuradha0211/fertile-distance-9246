@@ -91,7 +91,7 @@
         color: #fff;
         font-size: 15px;
         font-weight: 600;
-        pointer-events: none;
+        
       }
 
       #pagination-wrapper {
@@ -357,7 +357,7 @@
   <script>
     let containerEl = document.getElementById("mainside");
     let paginationWrapper = document.getElementById("pagination-wrapper");
-
+    let wishList = JSON.parse(localStorage.getItem('wishlist'))||[];
     window.addEventListener("load", function () {
       fetchData();
     });
@@ -402,14 +402,12 @@
       return btn;
     }
 
-    // let cart = JSON.parse(localStorage.getItem("prod")) || {};
-    let wishlistarray = JSON.parse(localStorage.getItem("wishlist")) || [];
+  
 
     function displayData(data) {
       containerEl.innerHTML = null;
       data.forEach((element) => {
-        // card for sigle data
-        // console.log(element);
+        
         let card = document.createElement("div");
         card.classList.add("card");
 
@@ -434,49 +432,42 @@
         let brandName = document.createElement("p");
         brandName.textContent = element.brandName;
 
-        let wishlist = document.createElement("button");
+         let wishlist = document.createElement("button");
         wishlist.textContent = "WishList";
-
-        wishlist.addEventListener("click", () => {
-          console.log("clicked");
-          if (duplicate1(element)) {
-            alert("Product Already in Cart");
-          } else {
-            wishlistarray.push({ ...element });
-            localStorage.setItem("wishlist", JSON.stringify(wishlistarray));
-            alert("Product Added To Cart");
+        wishlist.addEventListener("click",(e)=>{
+          e.preventDefault();
+          if(!auth){
+            alert('please login first');
+            window.location.href = '../login/login.html';
+          }else{
+           wishList.forEach((el)=>{
+            if(el.id == element.id)return;
+           })
+           wishList.push(element);
+           localStorage.setItem('wishlist',JSON.stringify(wishList));
           }
-        });
+          
+        })
+       
 
-        let addtocart = document.createElement("button");
-        // // anchor tag each card
-        // let aTag = document.createElement("a");
-        // aTag.target = "_blank";
-        // aTag.href = "../cart/pdp.html";
-        // aTag.textContent = "Product Details";
-        addtocart.textContent = "Product Details";
+        let pdp = document.createElement("button");
+        pdp.textContent = "add Product";
+        pdp.addEventListener('click',()=>{
+          localStorage.setItem("prod",JSON.stringify(element));
+          window.location.href = '../cart/pdp.html';
+        })
+        
+        
+        
 
-        // addtocart.addEventListener("click", () => {
-
-        //   console.log(element);
-        //   localStorage.setItem("prod", JSON.stringify(element));
-        //   alert("Product Added");
-        // });
-
-        divDetails.append(name, brandName, price, wishlist, addtocart); //here appending the details
+       
+        divDetails.append(name, brandName, price, wishlist, pdp); //here appending the details
         card.append(divImg, divDetails);
         containerEl.append(card);
       });
     }
 
-    function duplicate1(element) {
-      for (let i = 0; i < wishlistarray.length; i++) {
-        if (wishlistarray[i].id == element.id) {
-          return true;
-        }
-      }
-      return false;
-    }
+    
 
     //Sorting
     let sortAtoZBtn = document.getElementById("sort-low-to-high");

@@ -29,6 +29,8 @@ img{
 }
 .img-showcase img{
     min-width: 100%;
+    height: 500px;
+    object-fit: fill;
 }
 .img-select{
     display: flex;
@@ -36,6 +38,7 @@ img{
 .img-item{
     margin: 0.3rem;
 }
+
 .img-item:nth-child(1),
 .img-item:nth-child(2),
 .img-item:nth-child(3){

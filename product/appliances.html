@@ -137,7 +137,8 @@
   <script>
     let containerEl = document.getElementById("mainside");
     let paginationWrapper = document.getElementById("pagination-wrapper");
-
+    let wishList = JSON.parse(localStorage.getItem('wishlist'))||[];
+    let auth = localStorage.getItem('auth')||false;
     window.addEventListener("load", function () {
       fetchData();
     });
@@ -213,8 +214,34 @@
 
         let brandName = document.createElement("p");
         brandName.textContent = element.brandName;
+        let wishlist = document.createElement("button");
+        wishlist.textContent = "WishList";
+        wishlist.addEventListener("click",(e)=>{
+          e.preventDefault();
+          if(!auth){
+            alert('please login first');
+            window.location.href = '../login/login.html';
+          }else{
+           wishList.forEach((el)=>{
+            if(el.id == element.id)return;
+           })
+           wishList.push(element);
+           localStorage.setItem('wishlist',JSON.stringify(wishList));
+          }
+          
+        })
+       
+       
+        let pdp = document.createElement("button");
+        pdp.textContent = "add Product";
+        pdp.addEventListener('click',()=>{
+          localStorage.setItem("prod",JSON.stringify(element));
+          window.location.href = '../cart/pdp.html';
+        })
 
-        divDetails.append(name, brandName, price); //here appending the details
+
+
+        divDetails.append(name, brandName, price,wishlist,pdp); //here appending the details
         card.append(divImg, divDetails);
         aTag.append(card);
         containerEl.append(aTag);
