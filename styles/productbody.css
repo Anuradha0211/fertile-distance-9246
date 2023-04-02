@@ -3,11 +3,11 @@
     background-color: white;
     margin-top: 12px;
     margin-bottom: 12px;
-    height: 345px;
+    height: 350px;
 }
 #catsection{
     /* border: 2px solid red; */
-    width: 230px;
+    width: 20%;
     text-align: center;
     padding-top: 60px;
     background-position: 0px bottom;
@@ -36,7 +36,20 @@
     background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/31d46a8fd93eeedd.jpg?q=90);
 }
 #productsection{
+    width: 100%;
     display: flex;
-    gap: 50px;
+    /* border: 2px solid red; */
+    /* gap: 50px; */
+}
+#proddetails{
+    width: 100%;
+    margin-left: 0.8%;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+#proddetails>img{
+    height: 58%;
+    width: 80%;
+    padding-top: 15px;
 }
 

@@ -28,38 +28,41 @@ body{
     color: black;
     text-align: center;
 }
+#navproduct>div>a>h5{
+  text-align: center;
+}
 /* Dropdown Button */
 .productbtn {
     text-decoration: none;
     position: relative;
-  } 
-  .productbtn h5{
+} 
+.productbtn h5{
     text-decoration: none;
     color: black;
-  } 
+} 
   /* The container <div> - needed to position the dropdown content */
-  .productdropdown {
+.productdropdown {
     position: relative;
     display: inline-block;
-  }
+}
   
   /* Dropdown Content (Hidden by Default) */
-  .productdd-content {
+.productdd-content {
     display: none;
     position: absolute;
     background-color: white;
     min-width: 210px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
   
   /* Links inside the dropdown */
-  .productdd-content a {
+.productdd-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+}
   
   /* Change color of dropdown links on hover */
   .productdd-content a:hover {
@@ -68,4 +71,11 @@ body{
 }
   
   /* Show the dropdown menu on hover */
-  .productdropdown:hover .productdd-content {display: block;}
+.productdropdown:hover .productdd-content {display: block;}
+
+
+#slidingImages img{
+  width: 100%;
+  height: 400px;
+  /* border: 2px solid red; */
+}
