@@ -21,7 +21,7 @@
 // document.querySelector("#cross").addEventListener("click",function(){
 //     document.querySelector('.fa-solid .cros').classList.remove("active");
 // });
-
+let auth = localStorage.getItem('auth')||false;
 
 
 const loginBtn = document.getElementById("login-btn");
@@ -46,7 +46,8 @@ loginBtn.addEventListener("click", function() {
       if (email && password) {
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
-
+         auth = email;
+         localStorage.setItem('auth',email);  
         alert("Login successful!");
       } else {
         alert("Wrong email or password!");
