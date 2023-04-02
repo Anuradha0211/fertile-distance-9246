@@ -439,13 +439,13 @@
 
         wishlist.addEventListener("click", () => {
           console.log("clicked");
-          // if (duplicate1(element)) {
-          //   alert("Product Already in Cart");
-          // } else {
-          //   wishlistarray.push({ ...element });
-          //   localStorage.setItem("wishlist", JSON.stringify(wishlistarray));
-          //   alert("Product Added To Cart");
-          // }
+          if (duplicate1(element)) {
+            alert("Product Already in Cart");
+          } else {
+            wishlistarray.push({ ...element });
+            localStorage.setItem("wishlist", JSON.stringify(wishlistarray));
+            alert("Product Added To Cart");
+          }
         });
 
         let addtocart = document.createElement("button");
@@ -457,6 +457,7 @@
         addtocart.textContent = "Product Details";
 
         // addtocart.addEventListener("click", () => {
+
         //   console.log(element);
         //   localStorage.setItem("prod", JSON.stringify(element));
         //   alert("Product Added");
