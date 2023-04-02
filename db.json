@@ -12,6 +12,151 @@
       "name": "Vijay Dodiya",
       "email": "vijaydodiya0107@gmail.com",
       "passward": "Vijay@0107"
+    },
+    {
+      "id": 172000
+    },
+    {
+      "id": 172001
+    },
+    {
+      "id": 172002
+    },
+    {
+      "id": 172003
+    },
+    {
+      "id": 172004
+    },
+    {
+      "id": 172005
+    },
+    {
+      "id": 172006
+    },
+    {
+      "id": 172007
+    },
+    {
+      "id": 172008
+    },
+    {
+      "id": 172009
+    },
+    {
+      "id": 172010
+    },
+    {
+      "id": 172011
+    },
+    {
+      "id": 172012
+    },
+    {
+      "email": "anuradha@gmail.com",
+      "password": "123456",
+      "id": 172013
+    },
+    {
+      "email": "anu04@gmail.com",
+      "password": "anu1234",
+      "id": 172014
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": 172015
+    },
+    {
+      "email": "anu@gmail.com",
+      "password": "anu1234",
+      "id": 172016
+    },
+    {
+      "email": "anu@gmail.com",
+      "password": "anu1234",
+      "id": 172017
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 172018
+    },
+    {
+      "username": "anu",
+      "email": "anu@gmail.com",
+      "password": "anu123",
+      "id": 172019
+    },
+    {
+      "username": "anu",
+      "email": "anu@gmail.com",
+      "password": "anu123",
+      "id": 172020
+    },
+    {
+      "username": "anu",
+      "email": "anu@gmail.com",
+      "password": "anu123",
+      "id": 172021
+    },
+    {
+      "username": "anu",
+      "email": "anu@gmail.com",
+      "password": "anu123",
+      "id": 172022
+    },
+    {
+      "username": "anu",
+      "email": "anu@gmail.com",
+      "password": "anu123",
+      "id": 172023
+    },
+    {
+      "username": "shivi",
+      "email": "shivi@gmail.com",
+      "password": "shivi123",
+      "id": 172024
+    },
+    {
+      "username": "vijay",
+      "email": "vijay@gmail.com",
+      "password": "vijay123",
+      "id": 172025
+    },
+    {
+      "username": "abcdxyz",
+      "email": "abcd@gmail.com",
+      "password": "abcd1234",
+      "id": 172026
+    },
+    {
+      "username": "abcd",
+      "email": "abcd@gmail.com",
+      "password": "abcd",
+      "id": 172027
+    },
+    {
+      "username": "bxyz",
+      "email": "bxyz@gmail.com",
+      "password": "bxyz",
+      "id": 172028
+    },
+    {
+      "username": "join",
+      "email": "join@gmail.com",
+      "password": "join",
+      "id": 172029
+    },
+    {
+      "username": "oppo",
+      "email": "oppo@gmail.com",
+      "password": "oppo",
+      "id": 172030
+    },
+    {
+      "id": 172031
     }
   ],
   "mixProducts": [
@@ -1005,15 +1150,6 @@
       "brandName": "mi",
       "category": "mobile",
       "desc": "8 GB, 17.02cm, 50 MP Rear Camera and 6000mAh Battery"
-    },
-    {
-      "name": "Foxter",
-      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/k/3/x/xl-printed-shirt-for-men-foxter-original-imagktzmkg4wqwrv.jpeg?q=70",
-      "description": "Something",
-      "brandName": "newOne",
-      "price": "2654",
-      "category": "need",
-      "id": "xoVHHKJ"
     }
   ]
 }

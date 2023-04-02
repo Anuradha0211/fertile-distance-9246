@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion</title>
+    <style>
+      .fashionContainer {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .fashionAside {
+        width: 18%;
+        background-color: rgb(217, 217, 217);
+      }
+
+      .fashionAside #filterProduct > button {
+        margin: 200px;
+      }
+
+      #mainside {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+        margin-left: 10px;
+      }
+      #mainside a {
+        text-decoration: none;
+        color: black;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      .card > .boxImg {
+        width: 200px;
+        height: 250px;
+        margin: auto;
+        margin-top: 0;
+      }
+      .card > .boxImg img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+      }
+      .card > .boxDetails {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .card > .boxDetails h3 {
+        font-size: 25px;
+        font-weight: 600;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .card > .boxDetails p {
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(7, 79, 79);
+      }
+      #pagination-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+      }
+      #pagination-wrapper > button {
+        padding: 25px;
+        color: #fff;
+        background-color: brown;
+        margin: 20px 10px;
+        border-radius: 30%;
+        font-size: 25px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fashionContainer">
+      <div class="fashionAside">
+        <div class="filterProduct">
+          <h2>Filter based On the brand</h2>
+          <button
+            id="filter-less-than-300"
+            class="u-full-width button button-primary"
+          >
+            less than 300
+          </button>
+
+          <button
+            id="filter-more-than-equal-300"
+            class="u-full-width button button-primary"
+          >
+            more than or equal 300
+          </button>
+          <button
+            id="filter-by-brand-adidas"
+            class="u-full-width button button-primary"
+          >
+            adidas
+          </button>
+          <hr />
+        </div>
+        <div class="SortProduct">
+          <h2>Sort Based On the Price</h2>
+          <button
+            id="sort-low-to-high"
+            class="u-full-width button button-primary"
+          >
+            Sort Low To High
+          </button>
+          <button
+            id="sort-high-to-low"
+            class="u-full-width button button-primary"
+          >
+            Sort High To Low
+          </button>
+          <hr />
+        </div>
+      </div>
+      <div class="fashionMainSide" id="mainside">
+        <!-- Appending data -->
+      </div>
+    </div>
+    <div class="pagination-wrapper" id="pagination-wrapper"></div>
+  </body>
+  <script>
+    let containerEl = document.getElementById("mainside");
+    let paginationWrapper = document.getElementById("pagination-wrapper");
+    let wishList = JSON.parse(localStorage.getItem('wishlist'))||[];
+    window.addEventListener("load", function () {
+      fetchData();
+    });
+
+    async function fetchData(pageNumber = 1) {
+      try {
+        let res = await fetch(
+          `http://localhost:1999/products?_limit=12&_page=${pageNumber}`
+        );
+        let totalProduct = res.headers.get("X-Total-Count");
+        showPagination(totalProduct, 12);
+        let data = await res.json();
+        displayData(data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    // This function is for the showing the pagination buttons on dom
+    function showPagination(totalItems, limit) {
+      const numOfButtons = Math.ceil(totalItems / limit); // 3 button
+
+      paginationWrapper.innerHTML = null;
+
+      for (let i = 1; i <= numOfButtons; i++) {
+        paginationWrapper.append(getButton(i, i));
+      }
+    }
+
+    // This function create a button pagination
+    function getButton(text, pageNumber) {
+      let btn = document.createElement("button");
+      btn.classList.add("pagination-button");
+      btn.setAttribute("data-page-number", pageNumber);
+      btn.textContent = text;
+
+      btn.addEventListener("click", function (e) {
+        let pageNumber = e.target.dataset["pageNumber"];
+        fetchData(pageNumber);
+      });
+
+      return btn;
+    }
+
+    function displayData(data) {
+      containerEl.innerHTML = null;
+      data.forEach((element) => {
+        // anchor tag each card
+        let aTag = document.createElement("a");
+        aTag.target = "_blank";
+        aTag.href = "../cart/something.html";
+
+        // card for sigle data
+        let card = document.createElement("div");
+        card.classList.add("card");
+
+        // Image box
+        let divImg = document.createElement("div");
+        divImg.classList.add("boxImg");
+        let imageel = document.createElement("img");
+        imageel.setAttribute("src", element.image);
+        divImg.append(imageel); // here apendding the image
+
+        // details box
+        let divDetails = document.createElement("div");
+        divDetails.classList.add("boxDetails");
+
+        let name = document.createElement("h3");
+        name.textContent = element.name;
+
+        let price = document.createElement("p");
+        price.textContent = `₹${element.price}`;
+
+        let brandName = document.createElement("p");
+        brandName.textContent = element.brandName;
+        let wishlist = document.createElement("button");
+        wishlist.textContent = "WishList";
+        wishlist.addEventListener("click",(e)=>{
+          e.preventDefault();
+          if(!auth){
+            alert('please login first');
+            window.location.href = '../login/login.html';
+          }else{
+           wishList.forEach((el)=>{
+            if(el.id == element.id)return;
+           })
+           wishList.push(element);
+           localStorage.setItem('wishlist',JSON.stringify(wishList));
+          }
+          
+        })
+       
+
+        let pdp = document.createElement("button");
+        pdp.textContent = "add Product";
+        pdp.addEventListener('click',()=>{
+          localStorage.setItem("prod",JSON.stringify(element));
+          window.location.href = '../cart/pdp.html';
+        })
+        divDetails.append(name, brandName, price,wishlist,pdp); //here appending the details
+        card.append(divImg, divDetails);
+        aTag.append(card);
+        containerEl.append(aTag);
+      });
+    }
+    //Sorting
+    let sortAtoZBtn = document.getElementById("sort-low-to-high");
+    sortAtoZBtn.addEventListener("click", () => {
+      fetch(`http://localhost:1999/products/?_sort=price,views&_order=asc`)
+        .then((res) => res.json())
+        .then((data) => {
+          displayData(data);
+          // fetchData(data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    });
+
+    let sortZtoABtn = document.getElementById("sort-high-to-low");
+    sortZtoABtn.addEventListener("click", () => {
+      fetch(`http://localhost:1999/products/?_sort=price,views&_order=desc`)
+        .then((res) => res.json())
+        .then((data) => {
+          displayData(data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    });
+
+    //Filter
+    let filterLessThan300LBtn = document.getElementById("filter-less-than-300");
+
+    filterLessThan300LBtn.addEventListener("click", function (e) {
+      fetch(`http://localhost:1999/products/?price_lte=300`)
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          console.log(data);
+          displayData(data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    });
+
+    let filterMoreThanEqual300LBtn = document.getElementById(
+      "filter-more-than-equal-300"
+    );
+
+    filterMoreThanEqual300LBtn.addEventListener("click", function (e) {
+      fetch(`http://localhost:1999/products/?price_gte=300`)
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          displayData(data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    });
+    let filterByAdidas = document.getElementById("filter-by-brand-adidas");
+
+    filterByAdidas.addEventListener("click", function (e) {
+      fetch(`http://localhost:1999/products/?_limit=12brandName=Adidas`)
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          displayData(data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    });
+  </script>
+</html>

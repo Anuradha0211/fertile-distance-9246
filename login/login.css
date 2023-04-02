@@ -23,6 +23,7 @@ body{
     display:grid;
     grid-template-columns: 1fr 1.3fr;
     margin: auto;
+    /* display: none; */
 }
 
 .left{

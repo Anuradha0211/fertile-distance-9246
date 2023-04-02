@@ -70,27 +70,29 @@ function renderCards(users) {
     const card = document.createElement("div");
     card.classList.add("card");
 
+    const boxImg = document.createElement("div");
+    boxImg.classList.add("boxImg");
     const image = document.createElement("img");
     image.src = `${user.image}`;
     image.alt = `${user.name}'s profile picture`;
-    card.appendChild(image);
+    boxImg.appendChild(image);
+    card.appendChild(boxImg);
 
+    const boxdetails = document.createElement("div");
+    boxdetails.classList.add("boxDetails");
     const name = document.createElement("h2");
     name.textContent = user.name;
-    card.appendChild(name);
+    boxdetails.appendChild(name);
 
-    const age = document.createElement("p");
-    age.textContent = `Age: ${user.age}`;
-    card.appendChild(age);
+    const brand = document.createElement("p");
+    brand.textContent = `${user.brandName}`;
+    boxdetails.appendChild(brand);
 
-    const batch = document.createElement("p");
-    batch.textContent = `Batch: ${user.batch}`;
-    card.appendChild(batch);
+    const price = document.createElement("p");
+    price.textContent = `Price: ${user.price}`;
+    boxdetails.appendChild(price);
 
-    const profession = document.createElement("p");
-    profession.textContent = `Profession: ${user.profession}`;
-    card.appendChild(profession);
-
+    const btnDiv = document.createElement("div");
     const deleteIcon = document.createElement("button");
     deleteIcon.classList.add("deleteIcon");
     deleteIcon.textContent = "Delete";
@@ -111,13 +113,12 @@ function renderCards(users) {
       }
       fetchUsers();
     });
-    card.appendChild(deleteIcon);
+    btnDiv.appendChild(deleteIcon);
 
     const editIcon = document.createElement("button");
     const aTag = document.createElement("a");
     aTag.setAttribute("href", "#");
     aTag.setAttribute("data-id", user.id);
-    // aTag.setAttribute("class", cardLink);
     aTag.classList.add("cardLink");
     aTag.innerText = "Edit";
 
@@ -135,7 +136,9 @@ function renderCards(users) {
     });
     editIcon.appendChild(aTag);
 
-    card.appendChild(editIcon);
+    btnDiv.appendChild(editIcon);
+    boxdetails.appendChild(btnDiv);
+    card.appendChild(boxdetails);
 
     cardsContainer.appendChild(card);
   });
@@ -161,7 +164,7 @@ productCreateBtn.addEventListener("click", () => {
   let newEmpObj = {
     name: productName,
     image: productImg,
-    description: productDesc,
+    desc: productDesc,
     brandName: productBrand,
     price: productPrice,
     category: productCategory,
@@ -188,99 +191,98 @@ productCreateBtn.addEventListener("click", () => {
 let updateproductNameInput = document.getElementById("update-product-name");
 let updateproductImgInput = document.getElementById("update-product-image");
 let updateproductDescInput = document.getElementById("update-product-desc");
-let updateupdateproductBrandInput = document.getElementById(
-  "update-product-brand"
-);
+let updateproductBrandInput = document.getElementById("update-product-brand");
 let updateproductPriceInput = document.getElementById("update-product-price");
 let updateproductCategoryInput = document.getElementById(
   "update-product-category"
 );
-let updateproductCreateBtn = document.getElementById("update-add-product");
+let updateproductCreateBtn = document.getElementById("update-product");
 
-// function updateAllPopulateProduct(changeid) {
-//   fetch(`http://localhost:1999/products/${changeid}`)
-//     .then((res) => {
-//       return res.json();
-//     })
-//     .then((data) => {
-//       console.log(data);
-//       // Populate the input fields with the extracted values
-//       updateproductNameInput.value = data.name;
-//       updateproductImgInput.value = data.imege;
-//       updateproductDescInput.value = data.description;
-//       updateproductBrandInput.value = data.brandName;
-//       updateproductPriceInput.value = data.price;
-//       updateproductCategoryInput.value = data.category;
-//       changeupdatesProducts();
-//     })
-//     .catch((error) => {
-//       console.log(error);
-//     });
-// }
+function updateAllPopulateProduct(changeid) {
+  console.log(changeid);
+  fetch(`http://localhost:1999/products/${changeid}`)
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      console.log(data);
+      // Populate the input fields with the extracted values
+      updateproductNameInput.value = data.name;
+      updateproductImgInput.value = data.image;
+      updateproductDescInput.value = data.desc;
+      updateproductBrandInput.value = data.brandName;
+      updateproductPriceInput.value = data.price;
+      updateproductCategoryInput.value = data.category;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
 
-// function changeUpdatesValue() {
-//   updateproductCreateBtn.addEventListener("click", function () {
-//     let updateproductName = updateproductNameInput.value;
-//     let updateproductImg = updateproductImgInput.value;
-//     let updateproductDesc = updateproductDescInput.value;
-//     let updateproductBrand = updateproductBrandInput.value;
-//     let updateproductPrice = updateproductPriceInput.value;
-//     let updateproductCategory = updateproductCategoryInput.value;
+// function changeUpdatesProducts() {
+updateproductCreateBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  let updateproductName = updateproductNameInput.value;
+  let updateproductImg = updateproductImgInput.value;
+  let updateproductDesc = updateproductDescInput.value;
+  let updateproductBrand = updateproductBrandInput.value;
+  let updateproductPrice = updateproductPriceInput.value;
+  let updateproductCategory = updateproductCategoryInput.value;
 
-//     let newUpdatedProductObj = {
-//       name: updateproductName,
-//       image: updateproductImg,
-//       description: updateproductDesc,
-//       brandName: updateproductBrand,
-//       price: updateproductPrice,
-//       category: updateproductCategory,
-//     };
+  let newUpdatedProductObj = {
+    name: updateproductName,
+    image: updateproductImg,
+    desc: updateproductDesc,
+    brandName: updateproductBrand,
+    price: updateproductPrice,
+    category: updateproductCategory,
+  };
 
-//     fetch(`http://localhost:1999/products/${changeid}`, {
-//       method: "PATCH",
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//       body: JSON.stringify(newUpdatedProductObj),
-//     })
-//       .then((res) => {
-//         return res.json();
-//       })
-//       .then((data) => {
-//         console.log(data);
-//         fetchProduct(data);
-//       })
-//       .catch((error) => {
-//         console.log(error);
-//       });
-//   });
-// }
+  fetch(`http://localhost:1999/products/${changeid}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(newUpdatedProductObj),
+  })
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      console.log(data);
+      fetchProduct(data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
 
-// sortSelect.addEventListener("change", function (e) {
-//   const sortOrder = e.target.value;
+let sortProductLowtoHigh = document.getElementById("sort-low-to-high");
+sortProductLowtoHigh.addEventListener("click", function () {
+  fetch(`http://localhost:1999/products/?_sort=price,views&_order=asc`)
+    .then((response) => {
+      return response.json();
+    })
+    .then((productData) => {
+      console.log(productData);
+      renderCards(productData);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+});
 
-//   fetch("http://localhost:1999/products")
-//     .then((response) => {
-//       return response.json();
-//     })
-//     .then((users) => {
-//       const sortedUsers = sortUsersByAge(users, sortOrder);
-//       renderCards(sortedUsers);
-//     })
-//     .catch((error) => {
-//       console.error(error);
-//     });
-// });
-
-// function sortUsersByAge(users, sortOrder) {
-//   console.log(users);
-//   if (sortOrder === "asc") {
-//     users.sort((a, b) => a.age - b.age);
-//   } else if (sortOrder === "desc") {
-//     users.sort((a, b) => b.age - a.age);
-//   }
-//   return users;
-// }
+let sortProductHightoLow = document.getElementById("sort-high-to-low");
+sortProductHightoLow.addEventListener("click", () => {
+  fetch(`http://localhost:1999/products/?_sort=price,views&_order=desc`)
+    .then((res) => res.json())
+    .then((productData) => {
+      renderCards(productData);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
 
 // filterSelect.addEventListener("change", function (e) {
 //   const selectedBatch = e.target.value;
@@ -329,7 +331,8 @@ function searchUsersByName(users, searchQuery) {
     return users.filter(
       (user) =>
         user.name.toLowerCase().includes(searchQuery) ||
-        user.profession.toLowerCase().includes(searchQuery)
+        user.brandName.toLowerCase().includes(searchQuery) ||
+        user.category.toLowerCase().includes(searchQuery)
     );
   }
 }
