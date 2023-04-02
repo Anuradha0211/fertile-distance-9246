@@ -14,14 +14,13 @@ main{
     width: 90%;
     margin: auto;
     height: auto;
-    border: 1px solid red;
     display: flex;
-    gap: 15px;
+    gap: 25px;
 
 }
 .left{
 width: 30%;
-border: 2px solid blue;
+height: fit-content
 
 }
 .right{
@@ -42,6 +41,12 @@ padding: 20px;
     gap: 5px; 
     padding: 30px 15px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.card:hover{
+    cursor: pointer;
+}
+ .name:hover{
+    color: blue;
 }
 .img-box{
 width: 20%;
@@ -66,6 +71,9 @@ object-fit: contain;
 .r{
     font-size: 0.6rem;
 }
+.delete-box {
+    opacity: 0.5;
+}
 .rating{
     font-size: 0.7rem;
     background-color:#388e3c; 
@@ -86,4 +94,60 @@ object-fit: contain;
     font-size: 1.4rem;
     font-weight: 800;
 }
+.lt-img img{
+    display: block;
+    width: 130%;
+    
+    
+}
 
+.lt-img{
+    margin-right: 30px;
+}
+.left-top{
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+.left-mid{
+    border-radius: 5px;
+     padding: 20px 0;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.left-mid>div{
+    
+    padding: 10px 40px;
+   
+}
+.ind1{
+    font-size: 1.4rem;
+}
+.ind1 i{
+    color: blue;
+    margin-right: 30px;
+
+}
+
+
+.ind2{
+    padding-top: 10px;
+    margin-left: 60px;
+    font-size: 1rem;
+    font-family:sans-serif;
+    line-height: 2.2rem;
+    opacity: 0.6;   
+}
+.ind2>h4:hover{
+    color: blue;
+    cursor:pointer;
+}
+#logout:hover{
+cursor: pointer;
+color: blue;
+}
