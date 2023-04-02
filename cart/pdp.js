@@ -1,36 +1,4 @@
-let nav = document.querySelector("nav");
-nav.innerHTML = `<div id="topnav">
-<img src="./Images/Freecraft Logo.jpeg" alt="Logo Error" />
-<div id="navelem">
-  <input
-    type="text"
-    placeholder="Search for products, brands, and more"
-  />
-  <div class="more">
-    <button class="morebtn" id="alogin">Login</button>
-    <div class="more-content">
-      <a href="#">New Customer? <span>Sign Up</span></a>
-      <a href="#">My Profile</a>
-      <a href="#">Flipkart Plus Zone</a>
-      <a href="#">Orders</a>
-      <a href="#">Wishlist</a>
-      <a href="#">Rewards</a>
-      <a href="#">Gift Cards</a>
-    </div>
-  </div>
-  <a href="">Become a Seller</a>
-  <div class="more">
-    <button class="morebtn">More</button>
-    <div class="more-content">
-      <a href="#">Notification Preferences</a>
-      <a href="#">24x7 Customer Care</a>
-      <a href="#">Advertise</a>
-      <a href="#">Download App</a>
-    </div>
-  </div>
-  <a href="">Cart</a>
-</div>
-</div>`
+
 
 let footer = document.querySelector('footer');
 footer.innerHTML=` <div id="toppart">
