@@ -1,7 +1,7 @@
 let nav = document.querySelector("nav");
 nav.innerHTML = `<div id="navbar">
 <div id="topnav">
-  <img src="./Images/Freecraft Logo.jpeg" alt="Logo Error" />
+  <img src="../Images/Freecraft Logo.jpeg" alt="Logo Error" />
   <div id="navelem">
     <input
       type="text"
@@ -269,3 +269,5 @@ footer.innerHTML=` <div id="toppart">
 <h4>© 2007-2023 Flipkart.com</h4>
 <img src="./Images/payment-method_.svg" alt="" />
 </div>`
+
+
