@@ -91,7 +91,7 @@ function signin(obj) {
       });
       if (found) {
         alert("Sigin successful");
-        window.open(location.href = "/index.html");
+        window.open(location.href = "../index.html");
       } else {
         alert("Wrong username or password");
       }

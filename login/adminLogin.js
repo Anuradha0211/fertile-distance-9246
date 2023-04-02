@@ -44,7 +44,7 @@ function login(obj) {
       });
       if (found) {
         alert("Login successful");
-        window.open(location.href = "/admin/admin.html");
+        window.open(location.href = "../admin/adminDashboard.html");
       } else {
         alert("Wrong username or password");
       }
