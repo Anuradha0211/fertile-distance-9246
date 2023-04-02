@@ -1,55 +1,3 @@
-// const loginBtn = document.getElementById("login-btn");
-
-// loginBtn.addEventListener("click", function() {
-//   const email = document.getElementById("email").value;
-//   const password = document.getElementById("password").value;
-
-
-    
-//     localStorage.setItem("email", email);
-//     localStorage.setItem("password", password);
-
-//     alert("Login successful!");
-//   } 
-//   else if(email){
-//     localStorage.setItem("email", email);
-//     alert("Enter password");
-//   }
-//   else if(password){
-//     localStorage.setItem("password", password);
-//     alert("Enter email");
-//   }
-//   else {
-//     alert("Wrong email or password!");
-//   }
-// });
-
-// function login(obj){
-//     fetch(`http://localhost:1999/users`)
-//     .then((res)=> res.json())
-//     .then((data)=>{
-//         console.log(data);
-//         let count = 0;
-//         data.forEach((e) => {
-//             if(e.email == obj.email && e.password == obj.password){
-//                 alert("login SucessfSully");
-//                 display();
-//             }else{
-//                 count++;
-//             }
-//         });
-//         if(count == data.length){
-//             alert("wrong credentials");
-//         }
-//     })
-//     .catch((error)=>{
-//         console.log(error);
-//     })
-// }
-// function display(){
-//     window.location.href = "/index.html";
-// }
-
 
 
 
@@ -84,16 +32,19 @@ loginBtn.addEventListener("click", function() {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
-  fetch("http://localhost:1999/users",{
-  method:"POST",
-  headers:{
-    "Content-Type": "application/json",
-  },
-  body:JSON.stringify()
-})
+  fetch("http://localhost:1999/users", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email: email,
+      password: password,
+    })
+  })
     .then(response => response.json())
     .then(data => {
-        console.log(data)
+      console.log(data);
       if (email && password) {
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
@@ -108,7 +59,26 @@ loginBtn.addEventListener("click", function() {
     });
 });
 
+function display(){
+  window.location.href = "/index.html";
+}
 
 
 
+// const loginButton = document.getElementById('alogin');
+// const loginPopup = document.getElementById('login-popup');
+// const closePopup = document.getElementById('close-popup');
 
+// loginButton.addEventListener('click', () => {
+//   loginPopup.style.display = '';
+// });
+
+// closePopup.addEventListener('click', () => {
+//   loginPopup.style.display = 'none';
+// });
+
+// window.addEventListener('click', (event) => {
+//   if (event.target === loginPopup) {
+//     loginPopup.style.display = 'none';
+//   }
+// });
