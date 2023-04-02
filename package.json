@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Anuradha0211/fertile-distance-9246/issues"
   },
-  "homepage": "https://github.com/Anuradha0211/fertile-distance-9246#readme"
+  "homepage": "https://github.com/Anuradha0211/fertile-distance-9246#readme",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
 }
