@@ -5,80 +5,82 @@ if(LS==null){
 
 let cart=JSON.parse(localStorage.getItem("cart")) || {};
 
-let auth=JSON.parse(localStorage.getItem("auth")) || false;
+let auth=localStorage.getItem("auth") || false;
 
 
 let data=cart[auth];
-let j=[{
-  "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/k/3/x/xl-printed-shirt-for-men-foxter-original-imagktzmkg4wqwrv.jpeg?q=70",
-  "name": "Foxter",
-  "brandName": "Adidas",
-  "desc": "Men Regular Fit Printed Casual Shirt",
-  "price": 329,
-  "category": "fashion",
-  "id": "1",
-  "quantity":"1"
-},
-{
-  "image": "https://rukminim1.flixcart.com/image/832/832/kyxb9u80/t-shirt/k/n/y/xl-t67-nbwh-eyebogler-original-imagbfyc3rkzaj2y.jpeg?q=70",
-  "name": "EyeBogler",
-  "brandName": "Adidas",
-  "desc": "Men Striped Round Neck Blue T-Shirt",
-  "price": 299,
-  "category": "fashion",
-  "id": "2",
-  "quantity":"1"
-},
-{
-  "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/p/n/1/l-jc22-rn-fs-black-olv-never-jump-cuts-original-imaghcczhrhhfvud.jpeg?q=70",
-  "name": "Jump Cuts",
-  "brandName": "Adidas",
-  "desc": "Men Printed Round Neck Green, Black T-Shirt",
-  "price": 294,
-  "category": "fashion",
-  "id": "3",
-  "quantity":"1"
-},
-{
-  "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/b/m/i/l-t345-blwhrd-new-eyebogler-original-imafzr4f7nxecr44-bb.jpeg?q=70",
-  "name": "EyeCotton",
-  "brandName": "Adidas",
-  "desc": "Men Color Block Hooded Neck Multicolor T-Shirt",
-  "price": 259,
-  "category": "fashion",
-  "id": "4",
-  "quantity":"1"
-},
-{
-  "image": "https://rukminim1.flixcart.com/image/832/832/kiyw9e80-0/t-shirt/z/s/j/m-t2-seven-rocks-original-imafyn68m9v2pvwh.jpeg?q=70",
-  "name": "Creatywitty",
-  "brandName": "Adidas",
-  "desc": "Men Solid Hooded Neck Black T-Shirt",
-  "price": 329,
-  "category": "fashion",
-  "id": "5",
-  "quantity":"1"
-},
-{
-  "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/p/n/t/xl-tdgyblhenful-d37-tripr-original-imaghaqrggp5t77r.jpeg?q=70",
-  "name": "TRIPR",
-  "brandName": "Adidas",
-  "desc": "Men Solid Mandarin Collar Black, Grey T-Shirt",
-  "price": 299,
-  "category": "fashion",
-  "id": "6",
-  "quantity":"1"
-},
-{
-  "image": "https://rukminim1.flixcart.com/image/832/832/l1grgcw0/t-shirt/x/o/5/m-t428hs-tm5p-eyebogler-original-imagdf2egzjxeqgk.jpeg?q=70",
-  "name": "U Turn",
-  "brandName": "Adidas",
-  "desc": "Men Striped Polo Neck Blue T-Shirt",
-  "price": 299,
-  "category": "fashion",
-  "id": "7",
-  "quantity":"1"
-}];
+
+console.log(data);
+// let j=[{
+//   "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/k/3/x/xl-printed-shirt-for-men-foxter-original-imagktzmkg4wqwrv.jpeg?q=70",
+//   "name": "Foxter",
+//   "brandName": "Adidas",
+//   "desc": "Men Regular Fit Printed Casual Shirt",
+//   "price": 329,
+//   "category": "fashion",
+//   "id": "1",
+//   "quantity":"1"
+// },
+// {
+//   "image": "https://rukminim1.flixcart.com/image/832/832/kyxb9u80/t-shirt/k/n/y/xl-t67-nbwh-eyebogler-original-imagbfyc3rkzaj2y.jpeg?q=70",
+//   "name": "EyeBogler",
+//   "brandName": "Adidas",
+//   "desc": "Men Striped Round Neck Blue T-Shirt",
+//   "price": 299,
+//   "category": "fashion",
+//   "id": "2",
+//   "quantity":"1"
+// },
+// {
+//   "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/p/n/1/l-jc22-rn-fs-black-olv-never-jump-cuts-original-imaghcczhrhhfvud.jpeg?q=70",
+//   "name": "Jump Cuts",
+//   "brandName": "Adidas",
+//   "desc": "Men Printed Round Neck Green, Black T-Shirt",
+//   "price": 294,
+//   "category": "fashion",
+//   "id": "3",
+//   "quantity":"1"
+// },
+// {
+//   "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/b/m/i/l-t345-blwhrd-new-eyebogler-original-imafzr4f7nxecr44-bb.jpeg?q=70",
+//   "name": "EyeCotton",
+//   "brandName": "Adidas",
+//   "desc": "Men Color Block Hooded Neck Multicolor T-Shirt",
+//   "price": 259,
+//   "category": "fashion",
+//   "id": "4",
+//   "quantity":"1"
+// },
+// {
+//   "image": "https://rukminim1.flixcart.com/image/832/832/kiyw9e80-0/t-shirt/z/s/j/m-t2-seven-rocks-original-imafyn68m9v2pvwh.jpeg?q=70",
+//   "name": "Creatywitty",
+//   "brandName": "Adidas",
+//   "desc": "Men Solid Hooded Neck Black T-Shirt",
+//   "price": 329,
+//   "category": "fashion",
+//   "id": "5",
+//   "quantity":"1"
+// },
+// {
+//   "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/p/n/t/xl-tdgyblhenful-d37-tripr-original-imaghaqrggp5t77r.jpeg?q=70",
+//   "name": "TRIPR",
+//   "brandName": "Adidas",
+//   "desc": "Men Solid Mandarin Collar Black, Grey T-Shirt",
+//   "price": 299,
+//   "category": "fashion",
+//   "id": "6",
+//   "quantity":"1"
+// },
+// {
+//   "image": "https://rukminim1.flixcart.com/image/832/832/l1grgcw0/t-shirt/x/o/5/m-t428hs-tm5p-eyebogler-original-imagdf2egzjxeqgk.jpeg?q=70",
+//   "name": "U Turn",
+//   "brandName": "Adidas",
+//   "desc": "Men Striped Polo Neck Blue T-Shirt",
+//   "price": 299,
+//   "category": "fashion",
+//   "id": "7",
+//   "quantity":"1"
+// }];
 
 check(LS)
 function check(LS){
@@ -113,7 +115,7 @@ function check(LS){
    let btn5=document.getElementById("btn5");
    let btn6=document.getElementById("btn6");
 
-   chk(j)
+   chk(data)
     
    function chk(a){
        let sum=0;
@@ -162,10 +164,10 @@ function check(LS){
 
   
           btn2.addEventListener("click",function(){
-           j=j.filter((ele)=>{
+           data=data.filter((ele)=>{
                return ele.id!==a[i].id
            })
-           chk(j);
+           chk(data);
           })
           
           div3.append(add,quantity,subtract,btn2);
