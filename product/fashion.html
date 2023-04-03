@@ -424,6 +424,7 @@
     let containerEl = document.getElementById("mainside");
     let paginationWrapper = document.getElementById("pagination-wrapper");
     let wishList = JSON.parse(localStorage.getItem("wishlist")) || [];
+    let auth = localStorage.getItem('auth')||false;
     window.addEventListener("load", function () {
       fetchData();
     });
@@ -505,11 +506,23 @@
             alert("please login first");
             window.location.href = "../login/login.html";
           } else {
+            let state = true;;
             wishList.forEach((el) => {
-              if (el.id == element.id) return;
+              if (el.id == element.id){
+                state = false;
+                return;
+              }
+
             });
-            wishList.push(element);
+            if(state){
+              wishList.push(element);
+            
             localStorage.setItem("wishlist", JSON.stringify(wishList));
+            alert('product sucessfully added to wishlist ');
+            }else{
+              alert('product is already in wishList');
+            }
+           
           }
         });
 
