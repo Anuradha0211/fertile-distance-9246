@@ -109,12 +109,14 @@
      }
 .container-box{
     position: relative;
-    
+    top: -50px;
+    margin-bottom: 10px;
+   
     
 }  
 
 .rights{
-    position: fixed;
+
     right: 15px;
 
     width: 30%;
@@ -123,7 +125,7 @@
     
 }   
 .left-container{
-    position:absolute;
+    
     left: 15px;
     
 }
@@ -145,3 +147,56 @@
     background-color: orange;
     color: white;
 }
+
+footer{
+    background-color: #17263e;
+    color: white;
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 30px 40px;
+   
+     
+}
+#toppart{
+    display: flex;
+}
+#leftpart{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    line-height: 160%;
+}
+.vertical {
+    border-left: 1px solid grey;
+    height: 150px;
+
+    left: 50%;
+    margin-top: 25px;
+}
+#rightpart{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+hr{
+    margin-top: 20px;
+}
+#basesection{
+    display: flex;
+    justify-content: space-around;
+}
+#toppart h5{
+    color: grey;
+}
+#toppart a{
+    color: white;
+    text-decoration: none;
+}
+#delItem:hover{
+cursor: pointer;
+color: black;
+}
+#moveItem:hover{
+    cursor: pointer;
+}
+

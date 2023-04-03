@@ -14,7 +14,7 @@ nav.innerHTML = `<div id="navbar">
         <a href="#">My Profile</a>
         <a href="#">Flipkart Plus Zone</a>
         <a href="#">Orders</a>
-        <a href="#">Wishlist</a>
+        <a href="./wishlist.html">Wishlist</a>
         <a href="#">Rewards</a>
         <a href="#">Gift Cards</a>
       </div>
@@ -29,12 +29,12 @@ nav.innerHTML = `<div id="navbar">
         <a href="#">Download App</a>
       </div>
     </div>
-    <a href="">Cart</a>
+    <a href="#">Cart</a>
   </div>
 </div>
 <div id="bottomnav">
   <div id="navproduct">
-    <a href=""
+    <a href="../product/home.html"
       ><div>
         <img
           src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100"
@@ -43,7 +43,7 @@ nav.innerHTML = `<div id="navbar">
         <h5>Grocery</h5>
       </div></a
     >
-    <a href=""
+    <a href="../product/mobile.html"
       ><div>
         <img
           src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"
@@ -53,7 +53,7 @@ nav.innerHTML = `<div id="navbar">
       </div></a
     >
     <div class="productdropdown">
-      <a href="" class="productbtn">
+      <a href="../product/fashion.html" class="productbtn">
         <img
           src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/d34810848b2895c9.png?q=100"
           alt="Error"
@@ -76,7 +76,7 @@ nav.innerHTML = `<div id="navbar">
     </div>
 
     <div class="productdropdown">
-      <a href="" class="productbtn">
+      <a href="../product/electronics.html" class="productbtn">
         <img
           src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100"
           alt="Error"
@@ -102,7 +102,7 @@ nav.innerHTML = `<div id="navbar">
     </div>
 
     <div class="productdropdown">
-      <a href="" class="productbtn">
+      <a href="../index.html" class="productbtn">
         <img
           src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100"
           alt="Error"
@@ -125,7 +125,7 @@ nav.innerHTML = `<div id="navbar">
         <a href="#">Pet & Gardening</a>
       </div>
     </div>
-    <a href=""
+    <a href="../product/appliances.html"
       ><div>
         <img
           src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100"
@@ -134,7 +134,7 @@ nav.innerHTML = `<div id="navbar">
         <h5>Appliances</h5>
       </div></a
     >
-    <a href=""
+    <a href="../product/travel.html"
       ><div>
         <img
           src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100"
@@ -143,7 +143,7 @@ nav.innerHTML = `<div id="navbar">
         <h5>Travel</h5>
       </div></a
     >
-    <a href=""
+    <a href="../index.html"
       ><div>
         <img
           src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100"
@@ -192,8 +192,7 @@ nav.innerHTML = `<div id="navbar">
     </div>
   </div>
 </div>
-</div>`
-
+</div>`;
 let footer = document.querySelector('footer');
 footer.innerHTML=` <div id="toppart">
 <div id="leftpart">
@@ -269,6 +268,9 @@ footer.innerHTML=` <div id="toppart">
 <h4>© 2007-2023 Flipkart.com</h4>
 <img src="./Images/payment-method_.svg" alt="" />
 </div>`
+
+
+ 
 
 
 let container = document.querySelector('.container-box');
@@ -369,8 +371,8 @@ function createCard(img,name,brand,price,category,id,quantity){
     <!-- //remover move and price -->
     <div class="row">
     <div class="col-8 d-flex justify-content-between remove_wish">
-    <p><i class="fas fa-trash-alt"></i> REMOVE ITEM</p>
-    <p><i class="fas fa-heart"></i>MOVE TO WISH LIST </p>
+    <p id='delItem' onclick="deleteItem(${id})"><i class="fas fa-trash-alt"></i> REMOVE ITEM</p>
+    <p id='moveItem' onclick="moveWishlist(${id})"><i class="fas fa-heart"></i>MOVE TO WISH LIST </p>
     </div>
     <div class="col-4 d-flex justify-content-end price_money">
     
@@ -385,9 +387,27 @@ function createCard(img,name,brand,price,category,id,quantity){
 
 
 
+function moveWishlist(id){
+alert(id);
+removeItem(id,"r");
+}
 
+function deleteItem(id){
+  
+  removeItem(id)
+}
 
-
+function removeItem(id,m="d"){
+  if(m="r"){
+    alert('hello ji');
+    return;
+  }
+userCart = userCart.filter((el)=>el.id!=id);
+console.log(userCart);
+cart[auth]=userCart;
+localStorage.setItem('cart',JSON.stringify(cart));
+getCards(userCart);
+}
 
 const decreaseNumber = (id) => {
     let input = document.getElementById(id);
