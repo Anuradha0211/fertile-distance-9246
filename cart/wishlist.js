@@ -29,12 +29,12 @@ nav.innerHTML = `<div id="navbar">
         <a href="#">Download App</a>
       </div>
     </div>
-    <a href="">Cart</a>
+    <a href="./cart.html">Cart</a>
   </div>
 </div>
 <div id="bottomnav">
   <div id="navproduct">
-    <a href=""
+    <a href="../product/groceries.html"
       ><div>
         <img
           src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100"
@@ -43,7 +43,7 @@ nav.innerHTML = `<div id="navbar">
         <h5>Grocery</h5>
       </div></a
     >
-    <a href=""
+    <a href="../product/mobile.html"
       ><div>
         <img
           src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"
@@ -53,7 +53,7 @@ nav.innerHTML = `<div id="navbar">
       </div></a
     >
     <div class="productdropdown">
-      <a href="" class="productbtn">
+      <a href="../product/fashion.html" class="productbtn">
         <img
           src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/d34810848b2895c9.png?q=100"
           alt="Error"
@@ -76,7 +76,7 @@ nav.innerHTML = `<div id="navbar">
     </div>
 
     <div class="productdropdown">
-      <a href="" class="productbtn">
+      <a href="../product/electronic.html" class="productbtn">
         <img
           src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100"
           alt="Error"
@@ -102,7 +102,7 @@ nav.innerHTML = `<div id="navbar">
     </div>
 
     <div class="productdropdown">
-      <a href="" class="productbtn">
+      <a href="../product/home.html" class="productbtn">
         <img
           src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100"
           alt="Error"
@@ -134,7 +134,7 @@ nav.innerHTML = `<div id="navbar">
         <h5>Appliances</h5>
       </div></a
     >
-    <a href=""
+    <a href="../product/travel.html"
       ><div>
         <img
           src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100"
@@ -278,7 +278,8 @@ let pdCount = document.querySelector('#count');
 let container = document.querySelector('#cardContainer');
 let logout = document.querySelector('#logout');
 logout.addEventListener('click',()=>{
-  localStorage.setItem('auth',false);
+  localStorage.removeItem('auth');
+  auth = false;
   window.location.href='./wishlist.html';
   alert('logout sucessfully');
 })
@@ -288,6 +289,7 @@ if(auth){
 }
 
 function renderData(data){
+  if(!auth)return;
    container.innerHTML= null;
   data.map((el)=>{
     container.innerHTML+= getCard(el);
@@ -319,7 +321,7 @@ function renderData(data){
 // 1
 
 function getCard(obj){
-return ` <div  class="card" onclick="pdp(${obj})">
+return ` <div  class="card" onclick="pro(${obj.id})">
 <div class="img-box">
         <img src= ${obj.image} alt="img">
     </div>
@@ -344,10 +346,16 @@ function deleteWhishList(id){
       renderData(wishList);
 }
 
-function pdp(obj){
-  
-localStorage.setItem('prod',JSON.stringify(obj));
-window.location.href='./cart/pdp.html';
+function pro(id){
+  wishList.forEach((el)=>{
+    if(el.id==id){
+      localStorage.setItem('prod',JSON.stringify(el));
+      window.location.href = './pdp.html';
+    }
+  })
+
+
+
 }
 
 
