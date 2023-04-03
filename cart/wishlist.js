@@ -270,4 +270,85 @@ footer.innerHTML=` <div id="toppart">
 <img src="./Images/payment-method_.svg" alt="" />
 </div>`
 
+let wishList = JSON.parse(localStorage.getItem('wishlist'))||[];
+console.log(wishList);
+let auth = localStorage.getItem('auth');
+
+let pdCount = document.querySelector('#count');
+let container = document.querySelector('#cardContainer');
+let logout = document.querySelector('#logout');
+logout.addEventListener('click',()=>{
+  localStorage.setItem('auth',false);
+  window.location.href='./wishlist.html';
+  alert('logout sucessfully');
+})
+
+if(auth){
+  renderData(wishList);
+}
+
+function renderData(data){
+   container.innerHTML= null;
+  data.map((el)=>{
+    container.innerHTML+= getCard(el);
+  })
+}
+// //brandName
+// : 
+// "Adidas"
+// category
+// : 
+// "fashion"
+// desc
+// : 
+// "Men Regular Fit Printed Casual Shirt"
+// id
+// : 
+// "1"
+// image
+// : 
+// "https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/k/3/x/xl-printed-shirt-for-men-foxter-original-imagktzmkg4wqwrv.jpeg?q=70"
+// name
+// : 
+// "Foxter"
+// price
+// : 
+// 329
+// quantity
+// : 
+// 1
+
+function getCard(obj){
+return ` <div  class="card" onclick="pdp(${obj})">
+<div class="img-box">
+        <img src= ${obj.image} alt="img">
+    </div>
+
+    <div class="midbox">
+        
+        <div class="midbox-name">
+           <div class="name">${obj.name} ${obj.brandName}</div>
+           <div  class="delete-box"> <i onclick="deleteWhishList(${obj.id})" class="fa-solid fa-trash"></i></div>
+        </div>
+
+        <div class="rating"><span class="p-rating">4.2</span> <i class="fa-solid fa-star r"></i></div>
+       
+        <div class="price">₹<span class="p-price">${obj.price}</span></div>
+    </div>
+</div>`
+}
+
+function deleteWhishList(id){
+      wishList = wishList.filter((el)=>el.id!= id);
+      localStorage.setItem('wishlist',JSON.stringify(wishList));
+      renderData(wishList);
+}
+
+function pdp(obj){
+  
+localStorage.setItem('prod',JSON.stringify(obj));
+window.location.href='./cart/pdp.html';
+}
+
+
 

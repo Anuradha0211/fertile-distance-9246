@@ -285,7 +285,7 @@ let placeOrdBtn = document.querySelector('#orderplace');
 placeOrdBtn.addEventListener('click',()=>{
   window.location.href = '../payment/payment.html';
 })
-
+ let wishList = JSON.parse(localStorage.getItem('wishlist'))||[];
  let auth = localStorage.getItem('auth')||false;
  let cart = JSON.parse(localStorage.getItem("cart"))||{};
 
@@ -388,8 +388,9 @@ function createCard(img,name,brand,price,category,id,quantity){
 
 
 function moveWishlist(id){
-alert(id);
+
 removeItem(id,"r");
+alert('item add to WihsList')
 }
 
 function deleteItem(id){
@@ -399,8 +400,15 @@ function deleteItem(id){
 
 function removeItem(id,m="d"){
   if(m="r"){
-    alert('hello ji');
-    return;
+    userCart.forEach((el)=>{
+      if(el.id == id){
+        wishList.push(el);
+        localStorage.setItem('wishlist',JSON.stringify(wishList));
+        return;
+      }
+    
+    })
+    
   }
 userCart = userCart.filter((el)=>el.id!=id);
 console.log(userCart);
